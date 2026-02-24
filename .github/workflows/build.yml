@@ -4,12 +4,12 @@ on: [push]
 jobs:
   build_zst:
     runs-on: ubuntu-latest
-    container: archlinux:latest # استخدام بيئة آرتش أصلية للبناء الصحيح
+    container: archlinux:latest
     steps:
-      - name: Install Build Dependencies
+      - name: Update System and Install Build Tools
         run: |
           pacman -Syu --noconfirm
-          pacman -S --noconfirm base-devel git sassc
+          pacman -S --noconfirm base-devel git sassc gtk-engine-murrine gtk-engines
 
       - name: Checkout Your Files
         uses: actions/checkout@v4
@@ -18,7 +18,8 @@ jobs:
         run: |
           useradd -m builder
           chown -R builder .
-          sudo -u builder makepkg -f --noconfirm
+          # إضافة --nodeps لتخطي فحص التبعات داخل البيئة الوهمية لأننا ثبتناها يدوياً
+          sudo -u builder makepkg -f --noconfirm --nodeps
 
       - name: Upload ZST Package
         uses: actions/upload-artifact@v4
