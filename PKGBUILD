@@ -1,20 +1,21 @@
 pkgname=hel-Qogir-theme
 pkgver=1.0
 pkgrel=1
-pkgdesc="helwan Qogir"
+pkgdesc="Official Helwan Linux theme based on Qogir"
 arch=('any')
 url="https://github.com/helwan-linux/hel-Qogir-theme"
 license=('GPL3')
 depends=('gtk-engine-murrine' 'gtk-engines')
 makedepends=('sassc' 'git')
+# هنا خلينا المصادر أسماء الملفات مباشرة
 source=("git+https://github.com/vinceliuice/Qogir-theme.git"
-        "https://raw.githubusercontent.com/helwan-linux/theme/main/_colors.scss"
-        "https://raw.githubusercontent.com/helwan-linux/theme/main/_variables.scss")
+        "_colors.scss"
+        "_variables.scss")
 sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 prepare() {
   cd Qogir-theme
-  # حقن ألوان وزوايا حلوان
+  # الملفات بتكون موجودة في المجلد الرئيسي (srcdir)
   cp "$srcdir/_colors.scss" src/_sass/_colors.scss
   cp "$srcdir/_variables.scss" src/_sass/_variables.scss
   ./parse-sass.sh
@@ -22,6 +23,5 @@ prepare() {
 
 package() {
   cd Qogir-theme
-  # تثبيت السمة داخل الحزمة
   ./install.sh -n Helwan-Linux -d "$pkgdir/usr/share/themes"
 }
