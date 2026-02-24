@@ -20,30 +20,27 @@ sha256sums=('SKIP'
             'SKIP')
 
 prepare() {
-    # الدخول للمجلد اللي جابه الـ git
-    cd "hel-Qogir-theme"
+    # ادخل للمجلد اللي الماك بيج عمله فعلياً
+    cd "local_source"
     
-    # حقن ألوان حلوان في مسار الـ sass المظبوط
+    # حقن الألوان
     cp "$srcdir/_colors.scss" src/_sass/_colors.scss
     cp "$srcdir/_variables.scss" src/_sass/_variables.scss
     
-    # بناء الـ CSS بناءً على ألوانك
+    # بناء الـ CSS
     ./parse-sass.sh
 }
 
 package() {
-    cd "hel-Qogir-theme"
+    cd "local_source"
     
-    # إنشاء المسار الأساسي
     install -dm755 "$pkgdir/usr/share/themes"
 
-    # الخيارات دي (all و tweaks image) هي اللي بتخلي الحجم 12 ميجا
-    # لأنها بتنسخ الصور (Assets) لكل إصدارات الثيم
+    # التنفيذ بالخيارات الكاملة للحجم (12MB)
     ./install.sh --name hel-Qogir \
                  --theme all \
                  --tweaks image square round \
                  --dest "$pkgdir/usr/share/themes"
 
-    # مسح أي مجلدات فاضية لضمان نظافة الحزمة
     find "$pkgdir" -type d -empty -delete
 }
