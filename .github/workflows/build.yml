@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     container: archlinux:latest
     steps:
-      - name: Fix Pacman and Install Deps
+      - name: Install Build Tools Only
         run: |
-          sed -i '/\[extra\]/,/Include/s/^#//' /etc/pacman.conf
           pacman -Syu --noconfirm
-          pacman -S --noconfirm base-devel git sassc gtk-engine-murrine gtk-engines
+          # هنثبت بس اللي محتاجينه عشان "نصنع" الملف
+          pacman -S --noconfirm base-devel git sassc 
 
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -20,7 +20,9 @@ jobs:
           useradd -m builder
           echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
           chown -R builder .
-          sudo -u builder makepkg -f --noconfirm
+          # علم --nodeps بيخلي السيرفر يطنش إن murrine مش عنده، 
+          # لأننا كدة كدة بنبني CSS مش بنشغل واجهة
+          sudo -u builder makepkg -f --noconfirm --nodeps
 
       - name: Export Artifact
         uses: actions/upload-artifact@v4
