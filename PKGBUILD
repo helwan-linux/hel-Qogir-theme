@@ -5,7 +5,9 @@ pkgdesc="Official Hel-Qogir theme for Helwan Linux"
 arch=('any')
 url="https://github.com/helwan-linux/hel-Qogir-theme"
 license=('GPL3')
-depends=('gtk-engine-murrine' 'gtk-engines')
+# دول hpm هيثبتهم للمستخدم تلقائياً من مستودعاتك
+depends=('gtk-engine-murrine' 'gtk-engines') 
+# دول السيرفر هيستخدمهم للبناء بس
 makedepends=('sassc' 'git')
 source=("git+https://github.com/vinceliuice/Qogir-theme.git"
         "_colors.scss"
@@ -14,7 +16,6 @@ sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 prepare() {
   cd Qogir-theme
-  # حقن ملفاتك في مسار السورس
   cp "$srcdir/_colors.scss" src/_sass/_colors.scss
   cp "$srcdir/_variables.scss" src/_sass/_variables.scss
   ./parse-sass.sh
