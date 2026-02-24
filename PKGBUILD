@@ -1,31 +1,49 @@
-pkgname=hel-Qogir-theme
+# Maintainer: Helwan Linux Team
+pkgname="hel-Qogir-theme"
 pkgver=1.0
 pkgrel=1
-pkgdesc="Official Hel-Qogir theme for Helwan Linux"
+pkgdesc="Qogir flat design theme for Helwan Linux"
 arch=('any')
 url="https://github.com/helwan-linux/hel-Qogir-theme"
 license=('GPL3')
-# دول hpm هيثبتهم للمستخدم تلقائياً من مستودعاتك
-depends=('gtk-engine-murrine' 'gtk-engines') 
-# دول السيرفر هيستخدمهم للبناء بس
-makedepends=('sassc' 'git')
-source=("git+https://github.com/vinceliuice/Qogir-theme.git"
+makedepends=('grep' 'sassc' 'git')
+depends=('gtk-engines' 'gtk-engine-murrine')
+options=('!strip')
+
+# بنعتمد على المجلد المحلي اللي فيه الكود (المستودع بتاعك)
+# مع ملفات الـ scss اللي إنت معدلها
+source=("local_source::git+https://github.com/helwan-linux/hel-Qogir-theme.git"
         "_colors.scss"
         "_variables.scss")
-sha256sums=('SKIP' 'SKIP' 'SKIP')
+sha256sums=('SKIP'
+            'SKIP'
+            'SKIP')
 
 prepare() {
-  cd Qogir-theme
-  cp "$srcdir/_colors.scss" src/_sass/_colors.scss
-  cp "$srcdir/_variables.scss" src/_sass/_variables.scss
-  ./parse-sass.sh
+    # الدخول للمجلد اللي جابه الـ git
+    cd "hel-Qogir-theme"
+    
+    # حقن ألوان حلوان في مسار الـ sass المظبوط
+    cp "$srcdir/_colors.scss" src/_sass/_colors.scss
+    cp "$srcdir/_variables.scss" src/_sass/_variables.scss
+    
+    # بناء الـ CSS بناءً على ألوانك
+    ./parse-sass.sh
 }
 
 package() {
-  cd Qogir-theme
-  # إنشاء المجلد يدوياً لضمان وجوده قبل تشغيل سكريبت التثبيت
-  install -d "${pkgdir}/usr/share/themes"
-  
-  # التثبيت مع تحديد المسار الكامل والاسم
-  ./install.sh -n hel-Qogir -d "${pkgdir}/usr/share/themes"
+    cd "hel-Qogir-theme"
+    
+    # إنشاء المسار الأساسي
+    install -dm755 "$pkgdir/usr/share/themes"
+
+    # الخيارات دي (all و tweaks image) هي اللي بتخلي الحجم 12 ميجا
+    # لأنها بتنسخ الصور (Assets) لكل إصدارات الثيم
+    ./install.sh --name hel-Qogir \
+                 --theme all \
+                 --tweaks image square round \
+                 --dest "$pkgdir/usr/share/themes"
+
+    # مسح أي مجلدات فاضية لضمان نظافة الحزمة
+    find "$pkgdir" -type d -empty -delete
 }
