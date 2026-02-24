@@ -1,0 +1,3554 @@
+Qogir-theme-master/
+📁 Qogir-theme-master/
+├── 📄 .gitignore
+├── 📄 AUTHORS
+├── 📄 COPYING
+├── 📄 HACKING
+├── 📄 README.md
+├── 📄 install.sh
+├── 📄 parse-sass.sh
+├── 📁 release
+│   └── 📄 make-release.sh
+└── 📁 src
+    ├── 📁 _sass
+    │   ├── 📄 _colors.scss
+    │   ├── 📄 _tweaks.scss
+    │   ├── 📄 _variables.scss
+    │   ├── 📁 cinnamon
+    │   │   ├── 📄 _common.scss
+    │   │   └── 📄 _drawing.scss
+    │   ├── 📁 gnome-shell
+    │   │   ├── 📄 _common.scss
+    │   │   ├── 📄 _drawing.scss
+    │   │   ├── 📄 _extensions-3-32.scss
+    │   │   ├── 📄 _extensions-40-0.scss
+    │   │   ├── 📄 _extensions-46-0.scss
+    │   │   ├── 📄 _widgets-3-32.scss
+    │   │   ├── 📄 _widgets-40-0.scss
+    │   │   ├── 📄 _widgets-42-0.scss
+    │   │   ├── 📄 _widgets-44-0.scss
+    │   │   ├── 📄 _widgets-46-0.scss
+    │   │   ├── 📄 _widgets-47-0.scss
+    │   │   ├── 📄 _widgets-48-0.scss
+    │   │   ├── 📁 widgets-3-32
+    │   │   │   ├── 📄 _app-grid.scss
+    │   │   │   ├── 📄 _dash.scss
+    │   │   │   ├── 📄 _misc.scss
+    │   │   │   ├── 📄 _osd.scss
+    │   │   │   ├── 📄 _popovers.scss
+    │   │   │   └── 📄 _workspace-thumbnails.scss
+    │   │   ├── 📁 widgets-40-0
+    │   │   │   ├── 📄 _app-grid.scss
+    │   │   │   ├── 📄 _dash.scss
+    │   │   │   ├── 📄 _osd.scss
+    │   │   │   ├── 📄 _overview.scss
+    │   │   │   ├── 📄 _popovers.scss
+    │   │   │   ├── 📄 _search-entry.scss
+    │   │   │   ├── 📄 _window-picker.scss
+    │   │   │   └── 📄 _workspace-thumbnails.scss
+    │   │   ├── 📁 widgets-42-0
+    │   │   │   ├── 📄 _app-grid.scss
+    │   │   │   ├── 📄 _osd.scss
+    │   │   │   ├── 📄 _popovers.scss
+    │   │   │   ├── 📄 _quick-settings.scss
+    │   │   │   └── 📄 _screenshot.scss
+    │   │   ├── 📁 widgets-44-0
+    │   │   │   ├── 📄 _app-grid.scss
+    │   │   │   └── 📄 _quick-settings.scss
+    │   │   ├── 📁 widgets-46-0
+    │   │   │   ├── 📄 _app-grid.scss
+    │   │   │   ├── 📄 _calendar.scss
+    │   │   │   ├── 📄 _dash.scss
+    │   │   │   ├── 📄 _message-list.scss
+    │   │   │   ├── 📄 _notifications.scss
+    │   │   │   ├── 📄 _quick-settings.scss
+    │   │   │   └── 📄 _search-results.scss
+    │   │   ├── 📁 widgets-47-0
+    │   │   │   ├── 📄 _check-box.scss
+    │   │   │   ├── 📄 _dialogs.scss
+    │   │   │   ├── 📄 _notifications.scss
+    │   │   │   ├── 📄 _slider.scss
+    │   │   │   └── 📄 _switches.scss
+    │   │   ├── 📁 widgets-48-0
+    │   │   │   ├── 📄 _message-list.scss
+    │   │   │   └── 📄 _quick-settings.scss
+    │   │   └── 📁 widgets-common
+    │   │       ├── 📄 _a11y.scss
+    │   │       ├── 📄 _app-grid.scss
+    │   │       ├── 📄 _base.scss
+    │   │       ├── 📄 _buttons.scss
+    │   │       ├── 📄 _calendar.scss
+    │   │       ├── 📄 _check-box.scss
+    │   │       ├── 📄 _corner-ripple.scss
+    │   │       ├── 📄 _dash.scss
+    │   │       ├── 📄 _dialogs.scss
+    │   │       ├── 📄 _entries.scss
+    │   │       ├── 📄 _hotplug.scss
+    │   │       ├── 📄 _ibus-popup.scss
+    │   │       ├── 📄 _keyboard.scss
+    │   │       ├── 📄 _login-dialog.scss
+    │   │       ├── 📄 _looking-glass.scss
+    │   │       ├── 📄 _message-list.scss
+    │   │       ├── 📄 _misc.scss
+    │   │       ├── 📄 _network-dialog.scss
+    │   │       ├── 📄 _notifications.scss
+    │   │       ├── 📄 _osd.scss
+    │   │       ├── 📄 _overview.scss
+    │   │       ├── 📄 _panel.scss
+    │   │       ├── 📄 _popovers.scss
+    │   │       ├── 📄 _screen-shield.scss
+    │   │       ├── 📄 _scrollbars.scss
+    │   │       ├── 📄 _search-entry.scss
+    │   │       ├── 📄 _search-results.scss
+    │   │       ├── 📄 _slider.scss
+    │   │       ├── 📄 _switcher-popup.scss
+    │   │       ├── 📄 _switches.scss
+    │   │       ├── 📄 _tiled-previews.scss
+    │   │       ├── 📄 _window-picker.scss
+    │   │       ├── 📄 _workspace-switcher.scss
+    │   │       └── 📄 _workspace-thumbnails.scss
+    │   └── 📁 gtk
+    │       ├── 📄 _apps-3.0.scss
+    │       ├── 📄 _apps-4.0.scss
+    │       ├── 📄 _colors-public.scss
+    │       ├── 📄 _common-3.0.scss
+    │       ├── 📄 _common-4.0.scss
+    │       ├── 📄 _darksidebar_widgets.scss
+    │       ├── 📄 _drawing.scss
+    │       ├── 📄 _granite.scss
+    │       ├── 📄 _libadwaita.scss
+    │       └── 📁 apps
+    │           ├── 📄 _budgie.scss
+    │           ├── 📄 _elementary.scss
+    │           ├── 📄 _gnome-3.0.scss
+    │           ├── 📄 _gnome-4.0.scss
+    │           ├── 📄 _lightdm.scss
+    │           ├── 📄 _mate.scss
+    │           ├── 📄 _misc.scss
+    │           ├── 📄 _unity.scss
+    │           └── 📄 _xfce4.scss
+    ├── 📁 cinnamon
+    │   ├── 📁 assets
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📁 checkbox
+    │   │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   │   └── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📁 menu
+    │   │   │   │   ├── 📄 menu.svg
+    │   │   │   │   └── 📄 submenu.svg
+    │   │   │   ├── 📁 misc
+    │   │   │   │   ├── 📄 button-box.svg
+    │   │   │   │   ├── 📄 message.svg
+    │   │   │   │   └── 📄 modal.svg
+    │   │   │   └── 📁 switch
+    │   │   │       ├── 📄 switch-off.svg
+    │   │   │       └── 📄 switch-on.svg
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📁 checkbox
+    │   │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   │   └── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📁 menu
+    │   │   │   │   ├── 📄 menu.svg
+    │   │   │   │   └── 📄 submenu.svg
+    │   │   │   ├── 📁 misc
+    │   │   │   │   ├── 📄 button-box.svg
+    │   │   │   │   ├── 📄 message.svg
+    │   │   │   │   └── 📄 modal.svg
+    │   │   │   └── 📁 switch
+    │   │   │       ├── 📄 switch-off.svg
+    │   │   │       └── 📄 switch-on.svg
+    │   │   └── 📁 common-assets
+    │   │       ├── 📁 menu
+    │   │       │   ├── 📄 menu-hover.svg
+    │   │       │   └── 📄 menu-separator.svg
+    │   │       ├── 📁 misc
+    │   │       │   ├── 📄 add-workspace-active.svg
+    │   │       │   ├── 📄 add-workspace-hover.svg
+    │   │       │   ├── 📄 add-workspace.svg
+    │   │       │   ├── 📄 bg.svg
+    │   │       │   ├── 📄 calendar-arrow-left-hover.svg
+    │   │       │   ├── 📄 calendar-arrow-left.svg
+    │   │       │   ├── 📄 calendar-arrow-right-hover.svg
+    │   │       │   ├── 📄 calendar-arrow-right.svg
+    │   │       │   ├── 📄 close-active.svg
+    │   │       │   ├── 📄 close-hover.svg
+    │   │       │   ├── 📄 close.svg
+    │   │       │   ├── 📄 corner-ripple.svg
+    │   │       │   ├── 📄 desklet-header.svg
+    │   │       │   ├── 📄 desklet.svg
+    │   │       │   ├── 📄 osd.svg
+    │   │       │   ├── 📄 overview-hover.png
+    │   │       │   ├── 📄 overview.png
+    │   │       │   └── 📄 trash-icon.svg
+    │   │       ├── 📁 panel
+    │   │       │   ├── 📄 activities-active.svg
+    │   │       │   ├── 📄 activities.svg
+    │   │       │   ├── 📄 panel-bottom.svg
+    │   │       │   ├── 📄 panel-left.svg
+    │   │       │   ├── 📄 panel-right.svg
+    │   │       │   ├── 📄 panel-top.svg
+    │   │       │   ├── 📄 window-list-active-bottom.svg
+    │   │       │   ├── 📄 window-list-active-left.svg
+    │   │       │   ├── 📄 window-list-active-right.svg
+    │   │       │   └── 📄 window-list-active-top.svg
+    │   │       └── 📁 switch
+    │   │           ├── 📄 switch-off-selected.svg
+    │   │           └── 📄 switch-on-selected.svg
+    │   ├── 📁 assets-Manjaro
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📁 checkbox
+    │   │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   │   └── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📁 menu
+    │   │   │   │   ├── 📄 menu.svg
+    │   │   │   │   └── 📄 submenu.svg
+    │   │   │   ├── 📁 misc
+    │   │   │   │   ├── 📄 button-box.svg
+    │   │   │   │   ├── 📄 message.svg
+    │   │   │   │   └── 📄 modal.svg
+    │   │   │   └── 📁 switch
+    │   │   │       ├── 📄 switch-off.svg
+    │   │   │       └── 📄 switch-on.svg
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📁 checkbox
+    │   │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   │   └── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📁 menu
+    │   │   │   │   ├── 📄 menu.svg
+    │   │   │   │   └── 📄 submenu.svg
+    │   │   │   ├── 📁 misc
+    │   │   │   │   ├── 📄 button-box.svg
+    │   │   │   │   ├── 📄 message.svg
+    │   │   │   │   └── 📄 modal.svg
+    │   │   │   └── 📁 switch
+    │   │   │       ├── 📄 switch-off.svg
+    │   │   │       └── 📄 switch-on.svg
+    │   │   └── 📁 common-assets
+    │   │       ├── 📁 menu
+    │   │       │   ├── 📄 menu-hover.svg
+    │   │       │   └── 📄 menu-separator.svg
+    │   │       ├── 📁 misc
+    │   │       │   ├── 📄 add-workspace-active.svg
+    │   │       │   ├── 📄 add-workspace-hover.svg
+    │   │       │   ├── 📄 add-workspace.svg
+    │   │       │   ├── 📄 bg.svg
+    │   │       │   ├── 📄 calendar-arrow-left-hover.svg
+    │   │       │   ├── 📄 calendar-arrow-left.svg
+    │   │       │   ├── 📄 calendar-arrow-right-hover.svg
+    │   │       │   ├── 📄 calendar-arrow-right.svg
+    │   │       │   ├── 📄 close-active.svg
+    │   │       │   ├── 📄 close-hover.svg
+    │   │       │   ├── 📄 close.svg
+    │   │       │   ├── 📄 corner-ripple.svg
+    │   │       │   ├── 📄 desklet-header.svg
+    │   │       │   ├── 📄 desklet.svg
+    │   │       │   ├── 📄 osd.svg
+    │   │       │   ├── 📄 overview-hover.png
+    │   │       │   ├── 📄 overview.png
+    │   │       │   └── 📄 trash-icon.svg
+    │   │       ├── 📁 panel
+    │   │       │   ├── 📄 activities-active.svg
+    │   │       │   ├── 📄 activities.svg
+    │   │       │   ├── 📄 panel-bottom.svg
+    │   │       │   ├── 📄 panel-left.svg
+    │   │       │   ├── 📄 panel-right.svg
+    │   │       │   ├── 📄 panel-top.svg
+    │   │       │   ├── 📄 window-list-active-bottom.svg
+    │   │       │   ├── 📄 window-list-active-left.svg
+    │   │       │   ├── 📄 window-list-active-right.svg
+    │   │       │   └── 📄 window-list-active-top.svg
+    │   │       └── 📁 switch
+    │   │           ├── 📄 switch-off-selected.svg
+    │   │           └── 📄 switch-on-selected.svg
+    │   ├── 📁 assets-Ubuntu
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📁 checkbox
+    │   │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   │   └── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📁 menu
+    │   │   │   │   ├── 📄 menu.svg
+    │   │   │   │   └── 📄 submenu.svg
+    │   │   │   ├── 📁 misc
+    │   │   │   │   ├── 📄 button-box.svg
+    │   │   │   │   ├── 📄 message.svg
+    │   │   │   │   └── 📄 modal.svg
+    │   │   │   └── 📁 switch
+    │   │   │       ├── 📄 switch-off.svg
+    │   │   │       └── 📄 switch-on.svg
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📁 checkbox
+    │   │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   │   └── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📁 menu
+    │   │   │   │   ├── 📄 menu.svg
+    │   │   │   │   └── 📄 submenu.svg
+    │   │   │   ├── 📁 misc
+    │   │   │   │   ├── 📄 button-box.svg
+    │   │   │   │   ├── 📄 message.svg
+    │   │   │   │   └── 📄 modal.svg
+    │   │   │   └── 📁 switch
+    │   │   │       ├── 📄 switch-off.svg
+    │   │   │       └── 📄 switch-on.svg
+    │   │   └── 📁 common-assets
+    │   │       ├── 📁 menu
+    │   │       │   ├── 📄 menu-hover.svg
+    │   │       │   └── 📄 menu-separator.svg
+    │   │       ├── 📁 misc
+    │   │       │   ├── 📄 add-workspace-active.svg
+    │   │       │   ├── 📄 add-workspace-hover.svg
+    │   │       │   ├── 📄 add-workspace.svg
+    │   │       │   ├── 📄 bg.svg
+    │   │       │   ├── 📄 calendar-arrow-left-hover.svg
+    │   │       │   ├── 📄 calendar-arrow-left.svg
+    │   │       │   ├── 📄 calendar-arrow-right-hover.svg
+    │   │       │   ├── 📄 calendar-arrow-right.svg
+    │   │       │   ├── 📄 close-active.svg
+    │   │       │   ├── 📄 close-hover.svg
+    │   │       │   ├── 📄 close.svg
+    │   │       │   ├── 📄 corner-ripple.svg
+    │   │       │   ├── 📄 desklet-header.svg
+    │   │       │   ├── 📄 desklet.svg
+    │   │       │   ├── 📄 osd.svg
+    │   │       │   ├── 📄 overview-hover.png
+    │   │       │   ├── 📄 overview.png
+    │   │       │   └── 📄 trash-icon.svg
+    │   │       ├── 📁 panel
+    │   │       │   ├── 📄 activities-active.svg
+    │   │       │   ├── 📄 activities.svg
+    │   │       │   ├── 📄 panel-bottom.svg
+    │   │       │   ├── 📄 panel-left.svg
+    │   │       │   ├── 📄 panel-right.svg
+    │   │       │   ├── 📄 panel-top.svg
+    │   │       │   ├── 📄 window-list-active-bottom.svg
+    │   │       │   ├── 📄 window-list-active-left.svg
+    │   │       │   ├── 📄 window-list-active-right.svg
+    │   │       │   └── 📄 window-list-active-top.svg
+    │   │       └── 📁 switch
+    │   │           ├── 📄 switch-off-selected.svg
+    │   │           └── 📄 switch-on-selected.svg
+    │   ├── 📄 cinnamon-Dark.css
+    │   ├── 📄 cinnamon-Dark.scss
+    │   ├── 📄 cinnamon.css
+    │   ├── 📄 cinnamon.scss
+    │   ├── 📄 thumbnail-Dark.png
+    │   ├── 📄 thumbnail-Manjaro-Dark.png
+    │   ├── 📄 thumbnail-Manjaro.png
+    │   ├── 📄 thumbnail-Ubuntu-Dark.png
+    │   ├── 📄 thumbnail-Ubuntu.png
+    │   ├── 📄 thumbnail.png
+    │   └── 📄 thumbnail.svg
+    ├── 📁 firefox
+    │   ├── 📄 README.md
+    │   ├── 📁 chrome
+    │   │   ├── 📁 Qogir
+    │   │   │   ├── 📄 active-tab-contrast.css
+    │   │   │   ├── 📁 colors
+    │   │   │   │   ├── 📄 dark.css
+    │   │   │   │   └── 📄 light.css
+    │   │   │   ├── 📄 drag-window-headerbar-buttons.css
+    │   │   │   ├── 📄 hide-single-tab.css
+    │   │   │   ├── 📁 icons
+    │   │   │   │   ├── 📄 add-symbolic-light.svg
+    │   │   │   │   ├── 📄 add-symbolic.svg
+    │   │   │   │   ├── 📄 application-x-addon-symbolic.svg
+    │   │   │   │   ├── 📄 applications-engineering-symbolic.svg
+    │   │   │   │   ├── 📄 checkbox-checked-symbolic.svg
+    │   │   │   │   ├── 📄 checkbox-symbolic.svg
+    │   │   │   │   ├── 📄 edit-copy-symbolic.svg
+    │   │   │   │   ├── 📄 edit-cut-symbolic.svg
+    │   │   │   │   ├── 📄 edit-find-symbolic.svg
+    │   │   │   │   ├── 📄 edit-paste-symbolic.svg
+    │   │   │   │   ├── 📄 folder-download-symbolic.svg
+    │   │   │   │   ├── 📄 folder-symbolic-light.svg
+    │   │   │   │   ├── 📄 folder-symbolic.svg
+    │   │   │   │   ├── 📄 go-next-symbolic.svg
+    │   │   │   │   ├── 📄 go-previous-symbolic.svg
+    │   │   │   │   ├── 📄 mail-unread-symbolic.svg
+    │   │   │   │   ├── 📄 open-menu-symbolic.svg
+    │   │   │   │   ├── 📄 pan-down-symbolic-light.svg
+    │   │   │   │   ├── 📄 pan-down-symbolic.svg
+    │   │   │   │   ├── 📄 pan-end-symbolic-light.svg
+    │   │   │   │   ├── 📄 pan-end-symbolic.svg
+    │   │   │   │   ├── 📄 pan-start-symbolic.svg
+    │   │   │   │   ├── 📄 pan-up-symbolic.svg
+    │   │   │   │   ├── 📄 preferences-system-symbolic.svg
+    │   │   │   │   ├── 📄 preferences-system-time-symbolic-light.svg
+    │   │   │   │   ├── 📄 preferences-system-time-symbolic.svg
+    │   │   │   │   ├── 📄 printer-symbolic.svg
+    │   │   │   │   ├── 📄 radio-checked-symbolic.svg
+    │   │   │   │   ├── 📄 radio-symbolic.svg
+    │   │   │   │   ├── 📄 starred-symbolic.svg
+    │   │   │   │   ├── 📄 toggle-right-sidebar-symbolic.svg
+    │   │   │   │   ├── 📄 toggle-sidebar-symbolic.svg
+    │   │   │   │   ├── 📄 user-home-symbolic.svg
+    │   │   │   │   ├── 📄 user-not-tracked.svg
+    │   │   │   │   ├── 📄 view-fullscreen-symbolic.svg
+    │   │   │   │   ├── 📄 view-more-horizontal-symbolic.svg
+    │   │   │   │   ├── 📄 view-refresh-symbolic-light.svg
+    │   │   │   │   ├── 📄 view-refresh-symbolic.svg
+    │   │   │   │   ├── 📄 view-restore-symbolic.svg
+    │   │   │   │   ├── 📄 window-close-symbolic-light.svg
+    │   │   │   │   ├── 📄 window-close-symbolic.svg
+    │   │   │   │   ├── 📄 window-maximize-symbolic.svg
+    │   │   │   │   ├── 📄 window-minimize-symbolic.svg
+    │   │   │   │   ├── 📄 window-new-symbolic.svg
+    │   │   │   │   ├── 📄 zoom-in-symbolic.svg
+    │   │   │   │   └── 📄 zoom-out-symbolic.svg
+    │   │   │   ├── 📄 matching-autocomplete-width.css
+    │   │   │   ├── 📄 normal-width-tabs.css
+    │   │   │   ├── 📁 parts
+    │   │   │   │   ├── 📄 buttons-fixes.css
+    │   │   │   │   ├── 📄 buttons.css
+    │   │   │   │   ├── 📄 csd.css
+    │   │   │   │   ├── 📄 entries.css
+    │   │   │   │   ├── 📄 findbar.css
+    │   │   │   │   ├── 📄 headerbar-private-window.css
+    │   │   │   │   ├── 📄 headerbar-urlbar.css
+    │   │   │   │   ├── 📄 headerbar.css
+    │   │   │   │   ├── 📄 icons.css
+    │   │   │   │   ├── 📄 popups-contents.css
+    │   │   │   │   ├── 📄 popups.css
+    │   │   │   │   ├── 📄 remove-white-flash.css
+    │   │   │   │   ├── 📄 sidebar.css
+    │   │   │   │   ├── 📄 tabsbar.css
+    │   │   │   │   └── 📄 toolbox.css
+    │   │   │   ├── 📄 square-title-buttons.css
+    │   │   │   ├── 📄 symbolic-tab-icons.css
+    │   │   │   ├── 📄 system-icons.css
+    │   │   │   ├── 📄 theme.css
+    │   │   │   └── 📄 top-tab-bottom-search.css
+    │   │   └── 📄 userChrome.css
+    │   ├── 📁 configuration
+    │   │   └── 📄 user.js
+    │   └── 📄 preview.png
+    ├── 📁 gnome-shell
+    │   ├── 📁 assets
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   ├── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📄 switch-off.svg
+    │   │   │   └── 📄 switch-on.svg
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   ├── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📄 switch-off.svg
+    │   │   │   └── 📄 switch-on.svg
+    │   │   ├── 📄 background.jpg
+    │   │   └── 📄 calendar-today.svg
+    │   ├── 📁 assets-Manjaro
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   ├── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📄 switch-off.svg
+    │   │   │   └── 📄 switch-on.svg
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   ├── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📄 switch-off.svg
+    │   │   │   └── 📄 switch-on.svg
+    │   │   ├── 📄 background.jpg
+    │   │   └── 📄 calendar-today.svg
+    │   ├── 📁 assets-Ubuntu
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   ├── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📄 switch-off.svg
+    │   │   │   └── 📄 switch-on.svg
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📄 checkbox-checked-focused.svg
+    │   │   │   ├── 📄 checkbox-checked.svg
+    │   │   │   ├── 📄 checkbox-unchecked-focused.svg
+    │   │   │   ├── 📄 checkbox-unchecked.svg
+    │   │   │   ├── 📄 switch-off.svg
+    │   │   │   └── 📄 switch-on.svg
+    │   │   ├── 📄 background.jpg
+    │   │   └── 📄 calendar-today.svg
+    │   ├── 📁 common-assets
+    │   │   ├── 📄 activities.svg
+    │   │   ├── 📄 dash-placeholder.svg
+    │   │   ├── 📄 no-events.svg
+    │   │   ├── 📄 no-notifications.svg
+    │   │   ├── 📄 noise-texture.png
+    │   │   ├── 📄 process-working.svg
+    │   │   ├── 📄 switch-off-selected.svg
+    │   │   └── 📄 switch-on-selected.svg
+    │   ├── 📄 gnome-shell-theme.gresource.xml
+    │   ├── 📁 icons
+    │   │   └── 📁 scalable
+    │   │       ├── 📁 actions
+    │   │       │   ├── 📄 carousel-arrow-next-symbolic.svg
+    │   │       │   ├── 📄 carousel-arrow-previous-symbolic.svg
+    │   │       │   ├── 📄 color-pick.svg
+    │   │       │   ├── 📄 dark-mode-symbolic.svg
+    │   │       │   ├── 📄 pointer-double-click-symbolic.svg
+    │   │       │   ├── 📄 pointer-drag-symbolic.svg
+    │   │       │   ├── 📄 pointer-primary-click-symbolic.svg
+    │   │       │   ├── 📄 pointer-secondary-click-symbolic.svg
+    │   │       │   ├── 📄 preview-close-symbolic.svg
+    │   │       │   ├── 📄 record-screen-symbolic.svg
+    │   │       │   ├── 📄 screencast-recorded-symbolic.svg
+    │   │       │   ├── 📄 screenshot-recorded-symbolic.svg
+    │   │       │   ├── 📄 screenshot-ui-area-symbolic.svg
+    │   │       │   ├── 📄 screenshot-ui-display-symbolic.svg
+    │   │       │   ├── 📄 screenshot-ui-show-pointer-symbolic.svg
+    │   │       │   └── 📄 screenshot-ui-window-symbolic.svg
+    │   │       └── 📁 status
+    │   │           ├── 📄 eye-not-looking-symbolic.svg
+    │   │           ├── 📄 eye-open-negative-filled-symbolic.svg
+    │   │           ├── 📄 keyboard-caps-lock-filled-symbolic.svg
+    │   │           ├── 📄 keyboard-caps-lock-symbolic.svg
+    │   │           ├── 📄 keyboard-enter-symbolic.svg
+    │   │           ├── 📄 keyboard-hide-symbolic.svg
+    │   │           ├── 📄 keyboard-layout-filled-symbolic.svg
+    │   │           ├── 📄 keyboard-layout-symbolic.svg
+    │   │           ├── 📄 keyboard-shift-filled-symbolic.svg
+    │   │           ├── 📄 keyboard-shift-symbolic.svg
+    │   │           ├── 📄 message-indicator-symbolic.svg
+    │   │           ├── 📄 no-events-symbolic.svg
+    │   │           ├── 📄 no-notifications-symbolic.svg
+    │   │           ├── 📄 screen-privacy-disabled-symbolic.svg
+    │   │           ├── 📄 screen-privacy-symbolic.svg
+    │   │           ├── 📄 stop-symbolic.svg
+    │   │           └── 📄 window-close-symbolic.svg
+    │   ├── 📁 logos
+    │   │   ├── 📄 logo-.svg
+    │   │   ├── 📄 logo-arch.svg
+    │   │   ├── 📄 logo-budgie.svg
+    │   │   ├── 📄 logo-debian.svg
+    │   │   ├── 📄 logo-fedora.svg
+    │   │   ├── 📄 logo-gentoo.svg
+    │   │   ├── 📄 logo-gnome.svg
+    │   │   ├── 📄 logo-manjaro.svg
+    │   │   ├── 📄 logo-mxlinux.svg
+    │   │   ├── 📄 logo-opensuse.svg
+    │   │   ├── 📄 logo-popos.svg
+    │   │   ├── 📄 logo-qogir.svg
+    │   │   ├── 📄 logo-ubuntu.svg
+    │   │   ├── 📄 logo-void.svg
+    │   │   └── 📄 logo-zorin.svg
+    │   ├── 📄 pad-osd.css
+    │   ├── 📁 theme-3-32
+    │   │   ├── 📄 gnome-shell-Dark.css
+    │   │   ├── 📄 gnome-shell-Dark.scss
+    │   │   ├── 📄 gnome-shell.css
+    │   │   └── 📄 gnome-shell.scss
+    │   ├── 📁 theme-40-0
+    │   │   ├── 📄 gnome-shell-Dark.css
+    │   │   ├── 📄 gnome-shell-Dark.scss
+    │   │   ├── 📄 gnome-shell.css
+    │   │   └── 📄 gnome-shell.scss
+    │   ├── 📁 theme-42-0
+    │   │   ├── 📄 gnome-shell-Dark.css
+    │   │   ├── 📄 gnome-shell-Dark.scss
+    │   │   ├── 📄 gnome-shell.css
+    │   │   └── 📄 gnome-shell.scss
+    │   ├── 📁 theme-44-0
+    │   │   ├── 📄 gnome-shell-Dark.css
+    │   │   ├── 📄 gnome-shell-Dark.scss
+    │   │   ├── 📄 gnome-shell.css
+    │   │   └── 📄 gnome-shell.scss
+    │   ├── 📁 theme-46-0
+    │   │   ├── 📄 gnome-shell-Dark.css
+    │   │   ├── 📄 gnome-shell-Dark.scss
+    │   │   ├── 📄 gnome-shell.css
+    │   │   └── 📄 gnome-shell.scss
+    │   ├── 📁 theme-47-0
+    │   │   ├── 📄 gnome-shell-Dark.css
+    │   │   ├── 📄 gnome-shell-Dark.scss
+    │   │   ├── 📄 gnome-shell.css
+    │   │   └── 📄 gnome-shell.scss
+    │   └── 📁 theme-48-0
+    │       ├── 📄 gnome-shell-Dark.css
+    │       ├── 📄 gnome-shell-Dark.scss
+    │       ├── 📄 gnome-shell.css
+    │       └── 📄 gnome-shell.scss
+    ├── 📁 gtk
+    │   ├── 📁 assets
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📄 checkbox-checked-dark.png
+    │   │   │   ├── 📄 checkbox-checked-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode-dark.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode@2.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-checked@2.png
+    │   │   │   ├── 📄 checkbox-mixed-dark.png
+    │   │   │   ├── 📄 checkbox-mixed-dark@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-mixed.png
+    │   │   │   ├── 📄 checkbox-mixed@2.png
+    │   │   │   ├── 📄 radio-checked-dark.png
+    │   │   │   ├── 📄 radio-checked-dark@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive-dark.png
+    │   │   │   ├── 📄 radio-checked-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked-insensitive@2.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-checked@2.png
+    │   │   │   ├── 📄 radio-mixed-dark.png
+    │   │   │   ├── 📄 radio-mixed-dark@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-dark.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive.png
+    │   │   │   ├── 📄 radio-mixed-insensitive@2.png
+    │   │   │   ├── 📄 radio-mixed.png
+    │   │   │   ├── 📄 radio-mixed@2.png
+    │   │   │   ├── 📄 selected-dot.png
+    │   │   │   ├── 📄 selected-dot@2.png
+    │   │   │   ├── 📄 switch-active-dark.png
+    │   │   │   ├── 📄 switch-active-dark@2.png
+    │   │   │   ├── 📄 switch-active-insensitive-dark.png
+    │   │   │   ├── 📄 switch-active-insensitive-dark@2.png
+    │   │   │   ├── 📄 switch-active-insensitive.png
+    │   │   │   ├── 📄 switch-active-insensitive@2.png
+    │   │   │   ├── 📄 switch-active.png
+    │   │   │   └── 📄 switch-active@2.png
+    │   │   ├── 📁 assets-Manjaro
+    │   │   │   ├── 📄 checkbox-checked-dark.png
+    │   │   │   ├── 📄 checkbox-checked-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode-dark.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode@2.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-checked@2.png
+    │   │   │   ├── 📄 checkbox-mixed-dark.png
+    │   │   │   ├── 📄 checkbox-mixed-dark@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-mixed.png
+    │   │   │   ├── 📄 checkbox-mixed@2.png
+    │   │   │   ├── 📄 radio-checked-dark.png
+    │   │   │   ├── 📄 radio-checked-dark@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive-dark.png
+    │   │   │   ├── 📄 radio-checked-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked-insensitive@2.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-checked@2.png
+    │   │   │   ├── 📄 radio-mixed-dark.png
+    │   │   │   ├── 📄 radio-mixed-dark@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-dark.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive.png
+    │   │   │   ├── 📄 radio-mixed-insensitive@2.png
+    │   │   │   ├── 📄 radio-mixed.png
+    │   │   │   ├── 📄 radio-mixed@2.png
+    │   │   │   ├── 📄 selected-dot.png
+    │   │   │   ├── 📄 selected-dot@2.png
+    │   │   │   ├── 📄 switch-active-dark.png
+    │   │   │   ├── 📄 switch-active-dark@2.png
+    │   │   │   ├── 📄 switch-active-insensitive-dark.png
+    │   │   │   ├── 📄 switch-active-insensitive-dark@2.png
+    │   │   │   ├── 📄 switch-active-insensitive.png
+    │   │   │   ├── 📄 switch-active-insensitive@2.png
+    │   │   │   ├── 📄 switch-active.png
+    │   │   │   └── 📄 switch-active@2.png
+    │   │   ├── 📄 assets-Manjaro.svg
+    │   │   ├── 📁 assets-Ubuntu
+    │   │   │   ├── 📄 checkbox-checked-dark.png
+    │   │   │   ├── 📄 checkbox-checked-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode-dark.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode-dark@2.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode.png
+    │   │   │   ├── 📄 checkbox-checked-selectionmode@2.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-checked@2.png
+    │   │   │   ├── 📄 checkbox-mixed-dark.png
+    │   │   │   ├── 📄 checkbox-mixed-dark@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-mixed.png
+    │   │   │   ├── 📄 checkbox-mixed@2.png
+    │   │   │   ├── 📄 radio-checked-dark.png
+    │   │   │   ├── 📄 radio-checked-dark@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive-dark.png
+    │   │   │   ├── 📄 radio-checked-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked-insensitive@2.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-checked@2.png
+    │   │   │   ├── 📄 radio-mixed-dark.png
+    │   │   │   ├── 📄 radio-mixed-dark@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-dark.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive.png
+    │   │   │   ├── 📄 radio-mixed-insensitive@2.png
+    │   │   │   ├── 📄 radio-mixed.png
+    │   │   │   ├── 📄 radio-mixed@2.png
+    │   │   │   ├── 📄 selected-dot.png
+    │   │   │   ├── 📄 selected-dot@2.png
+    │   │   │   ├── 📄 switch-active-dark.png
+    │   │   │   ├── 📄 switch-active-dark@2.png
+    │   │   │   ├── 📄 switch-active-insensitive-dark.png
+    │   │   │   ├── 📄 switch-active-insensitive-dark@2.png
+    │   │   │   ├── 📄 switch-active-insensitive.png
+    │   │   │   ├── 📄 switch-active-insensitive@2.png
+    │   │   │   ├── 📄 switch-active.png
+    │   │   │   └── 📄 switch-active@2.png
+    │   │   ├── 📄 assets-Ubuntu.svg
+    │   │   ├── 📁 assets-common
+    │   │   │   ├── 📄 backimage-dark.png
+    │   │   │   ├── 📄 backimage-dark@2.png
+    │   │   │   ├── 📄 backimage.png
+    │   │   │   ├── 📄 backimage@2.png
+    │   │   │   ├── 📄 check-symbolic.svg
+    │   │   │   ├── 📄 check-symbolic@2.svg
+    │   │   │   ├── 📄 checkbox-checked-insensitive-selected.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive-selected@2.png
+    │   │   │   ├── 📄 checkbox-checked-selected.png
+    │   │   │   ├── 📄 checkbox-checked-selected@2.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-selected.png
+    │   │   │   ├── 📄 checkbox-mixed-insensitive-selected@2.png
+    │   │   │   ├── 📄 checkbox-mixed-selected.png
+    │   │   │   ├── 📄 checkbox-mixed-selected@2.png
+    │   │   │   ├── 📄 checkbox-selectionmode-dark.png
+    │   │   │   ├── 📄 checkbox-selectionmode-dark@2.png
+    │   │   │   ├── 📄 checkbox-selectionmode.png
+    │   │   │   ├── 📄 checkbox-selectionmode@2.png
+    │   │   │   ├── 📄 checkbox-unchecked-dark.png
+    │   │   │   ├── 📄 checkbox-unchecked-dark@2.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive-dark.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive-dark@2.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive-selected.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive-selected@2.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive@2.png
+    │   │   │   ├── 📄 checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 checkbox-unchecked-selected@2.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 checkbox-unchecked@2.png
+    │   │   │   ├── 📄 radio-checked-insensitive-selected.png
+    │   │   │   ├── 📄 radio-checked-insensitive-selected@2.png
+    │   │   │   ├── 📄 radio-checked-selected.png
+    │   │   │   ├── 📄 radio-checked-selected@2.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-selected.png
+    │   │   │   ├── 📄 radio-mixed-insensitive-selected@2.png
+    │   │   │   ├── 📄 radio-mixed-selected.png
+    │   │   │   ├── 📄 radio-mixed-selected@2.png
+    │   │   │   ├── 📄 radio-unchecked-dark.png
+    │   │   │   ├── 📄 radio-unchecked-dark@2.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive-dark.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive-dark@2.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive-selected.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive-selected@2.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive@2.png
+    │   │   │   ├── 📄 radio-unchecked-selected.png
+    │   │   │   ├── 📄 radio-unchecked-selected@2.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 radio-unchecked@2.png
+    │   │   │   ├── 📄 switch-active-insensitive-selected.png
+    │   │   │   ├── 📄 switch-active-insensitive-selected@2.png
+    │   │   │   ├── 📄 switch-active-selected.png
+    │   │   │   ├── 📄 switch-active-selected@2.png
+    │   │   │   ├── 📄 switch-dark.png
+    │   │   │   ├── 📄 switch-dark@2.png
+    │   │   │   ├── 📄 switch-insensitive-dark.png
+    │   │   │   ├── 📄 switch-insensitive-dark@2.png
+    │   │   │   ├── 📄 switch-insensitive-selected.png
+    │   │   │   ├── 📄 switch-insensitive-selected@2.png
+    │   │   │   ├── 📄 switch-insensitive.png
+    │   │   │   ├── 📄 switch-insensitive@2.png
+    │   │   │   ├── 📄 switch-selected.png
+    │   │   │   ├── 📄 switch-selected@2.png
+    │   │   │   ├── 📄 switch.png
+    │   │   │   └── 📄 switch@2.png
+    │   │   ├── 📄 assets-common.svg
+    │   │   ├── 📄 assets-common.txt
+    │   │   ├── 📄 assets.svg
+    │   │   ├── 📄 assets.txt
+    │   │   ├── 📁 logos
+    │   │   │   ├── 📄 logo-.svg
+    │   │   │   ├── 📄 logo-arch.svg
+    │   │   │   ├── 📄 logo-budgie.svg
+    │   │   │   ├── 📄 logo-debian.svg
+    │   │   │   ├── 📄 logo-fedora.svg
+    │   │   │   ├── 📄 logo-gentoo.svg
+    │   │   │   ├── 📄 logo-gnome.svg
+    │   │   │   ├── 📄 logo-manjaro.svg
+    │   │   │   ├── 📄 logo-mxlinux.svg
+    │   │   │   ├── 📄 logo-opensuse.svg
+    │   │   │   ├── 📄 logo-popos.svg
+    │   │   │   ├── 📄 logo-ubuntu.svg
+    │   │   │   ├── 📄 logo-void.svg
+    │   │   │   ├── 📄 logo-zorin.svg
+    │   │   │   ├── 📄 logo@2-.svg
+    │   │   │   ├── 📄 logo@2-arch.svg
+    │   │   │   ├── 📄 logo@2-budgie.svg
+    │   │   │   ├── 📄 logo@2-debian.svg
+    │   │   │   ├── 📄 logo@2-fedora.svg
+    │   │   │   ├── 📄 logo@2-gentoo.svg
+    │   │   │   ├── 📄 logo@2-gnome.svg
+    │   │   │   ├── 📄 logo@2-manjaro.svg
+    │   │   │   ├── 📄 logo@2-mxlinux.svg
+    │   │   │   ├── 📄 logo@2-opensuse.svg
+    │   │   │   ├── 📄 logo@2-popos.svg
+    │   │   │   ├── 📄 logo@2-ubuntu.svg
+    │   │   │   ├── 📄 logo@2-void.svg
+    │   │   │   └── 📄 logo@2-zorin.svg
+    │   │   ├── 📄 render-assets.sh
+    │   │   ├── 📄 thumbnail-Dark.png
+    │   │   ├── 📄 thumbnail-Manjaro-Dark.png
+    │   │   ├── 📄 thumbnail-Manjaro.png
+    │   │   ├── 📄 thumbnail-Ubuntu-Dark.png
+    │   │   ├── 📄 thumbnail-Ubuntu.png
+    │   │   ├── 📄 thumbnail.png
+    │   │   └── 📄 thumbnail.svg
+    │   ├── 📁 theme-3.0
+    │   │   ├── 📄 gtk-Dark.css
+    │   │   ├── 📄 gtk-Dark.scss
+    │   │   ├── 📄 gtk-Light.css
+    │   │   ├── 📄 gtk-Light.scss
+    │   │   ├── 📄 gtk.css
+    │   │   └── 📄 gtk.scss
+    │   └── 📁 theme-4.0
+    │       ├── 📄 gtk-Dark.css
+    │       ├── 📄 gtk-Dark.scss
+    │       ├── 📄 gtk-Light.css
+    │       ├── 📄 gtk-Light.scss
+    │       ├── 📄 gtk.css
+    │       └── 📄 gtk.scss
+    ├── 📁 gtk-2.0
+    │   ├── 📄 apps.rc
+    │   ├── 📁 assets
+    │   │   ├── 📁 assets
+    │   │   │   ├── 📄 arrow-down-insens.png
+    │   │   │   ├── 📄 arrow-down-prelight.png
+    │   │   │   ├── 📄 arrow-down-small-insens.png
+    │   │   │   ├── 📄 arrow-down-small-prelight.png
+    │   │   │   ├── 📄 arrow-down-small.png
+    │   │   │   ├── 📄 arrow-down.png
+    │   │   │   ├── 📄 arrow-left-insens.png
+    │   │   │   ├── 📄 arrow-left-prelight.png
+    │   │   │   ├── 📄 arrow-left.png
+    │   │   │   ├── 📄 arrow-right-insens.png
+    │   │   │   ├── 📄 arrow-right-prelight.png
+    │   │   │   ├── 📄 arrow-right.png
+    │   │   │   ├── 📄 arrow-up-insens.png
+    │   │   │   ├── 📄 arrow-up-prelight.png
+    │   │   │   ├── 📄 arrow-up-small-insens.png
+    │   │   │   ├── 📄 arrow-up-small-prelight.png
+    │   │   │   ├── 📄 arrow-up-small.png
+    │   │   │   ├── 📄 arrow-up.png
+    │   │   │   ├── 📄 button-active.png
+    │   │   │   ├── 📄 button-hover.png
+    │   │   │   ├── 📄 button-insensitive.png
+    │   │   │   ├── 📄 button.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 combo-entry-border-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-border-focus.png
+    │   │   │   ├── 📄 combo-entry-border-rtl.png
+    │   │   │   ├── 📄 combo-entry-border.png
+    │   │   │   ├── 📄 combo-entry-button-active-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-active.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive.png
+    │   │   │   ├── 📄 combo-entry-button-rtl.png
+    │   │   │   ├── 📄 combo-entry-button.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook.png
+    │   │   │   ├── 📄 combo-entry-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook.png
+    │   │   │   ├── 📄 combo-entry-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive.png
+    │   │   │   ├── 📄 combo-entry-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-notebook.png
+    │   │   │   ├── 📄 combo-entry-rtl.png
+    │   │   │   ├── 📄 combo-entry.png
+    │   │   │   ├── 📄 down-background-disable-rtl.png
+    │   │   │   ├── 📄 down-background-disable.png
+    │   │   │   ├── 📄 down-background-rtl.png
+    │   │   │   ├── 📄 down-background.png
+    │   │   │   ├── 📄 entry-active-bg.png
+    │   │   │   ├── 📄 entry-active-notebook.png
+    │   │   │   ├── 📄 entry-active-toolbar.png
+    │   │   │   ├── 📄 entry-background-disabled.png
+    │   │   │   ├── 📄 entry-background.png
+    │   │   │   ├── 📄 entry-bg.png
+    │   │   │   ├── 📄 entry-border-active-bg.png
+    │   │   │   ├── 📄 entry-border-bg.png
+    │   │   │   ├── 📄 entry-disabled-bg.png
+    │   │   │   ├── 📄 entry-disabled-notebook.png
+    │   │   │   ├── 📄 entry-disabled-toolbar.png
+    │   │   │   ├── 📄 entry-notebook.png
+    │   │   │   ├── 📄 entry-toolbar.png
+    │   │   │   ├── 📄 focus-line.png
+    │   │   │   ├── 📄 frame-gap-end.png
+    │   │   │   ├── 📄 frame-gap-start.png
+    │   │   │   ├── 📄 frame.png
+    │   │   │   ├── 📄 handle-h.png
+    │   │   │   ├── 📄 handle-v.png
+    │   │   │   ├── 📄 inline-toolbar.png
+    │   │   │   ├── 📄 line-h.png
+    │   │   │   ├── 📄 line-v.png
+    │   │   │   ├── 📄 menu-arrow-prelight.png
+    │   │   │   ├── 📄 menu-arrow.png
+    │   │   │   ├── 📄 menu-checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-checked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-checked.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked.png
+    │   │   │   ├── 📄 menu-radio-checked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-checked-selected.png
+    │   │   │   ├── 📄 menu-radio-checked.png
+    │   │   │   ├── 📄 menu-radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-unchecked-selected.png
+    │   │   │   ├── 📄 menu-radio-unchecked.png
+    │   │   │   ├── 📄 menubar-dark.png
+    │   │   │   ├── 📄 menubar.png
+    │   │   │   ├── 📄 menubar_button.png
+    │   │   │   ├── 📄 menuitem.png
+    │   │   │   ├── 📄 minus.png
+    │   │   │   ├── 📄 notebook-gap-horiz.png
+    │   │   │   ├── 📄 notebook-gap-vert.png
+    │   │   │   ├── 📄 notebook.png
+    │   │   │   ├── 📄 null.png
+    │   │   │   ├── 📄 pathbar_button_active.png
+    │   │   │   ├── 📄 pathbar_button_prelight.png
+    │   │   │   ├── 📄 plus.png
+    │   │   │   ├── 📄 progressbar.png
+    │   │   │   ├── 📄 progressbar_v.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 slider-horiz-active.png
+    │   │   │   ├── 📄 slider-horiz-insens.png
+    │   │   │   ├── 📄 slider-horiz-prelight.png
+    │   │   │   ├── 📄 slider-horiz.png
+    │   │   │   ├── 📄 slider-insensitive.png
+    │   │   │   ├── 📄 slider-prelight.png
+    │   │   │   ├── 📄 slider-vert-active.png
+    │   │   │   ├── 📄 slider-vert-insens.png
+    │   │   │   ├── 📄 slider-vert-prelight.png
+    │   │   │   ├── 📄 slider-vert.png
+    │   │   │   ├── 📄 slider.png
+    │   │   │   ├── 📄 tab-bottom-active.png
+    │   │   │   ├── 📄 tab-left-active.png
+    │   │   │   ├── 📄 tab-right-active.png
+    │   │   │   ├── 📄 tab-top-active.png
+    │   │   │   ├── 📄 toolbar.png
+    │   │   │   ├── 📄 tree_header.png
+    │   │   │   ├── 📄 trough-horizontal-active.png
+    │   │   │   ├── 📄 trough-horizontal.png
+    │   │   │   ├── 📄 trough-progressbar.png
+    │   │   │   ├── 📄 trough-progressbar_v.png
+    │   │   │   ├── 📄 trough-scrollbar-horiz.png
+    │   │   │   ├── 📄 trough-scrollbar-vert.png
+    │   │   │   ├── 📄 trough-vertical-active.png
+    │   │   │   ├── 📄 trough-vertical.png
+    │   │   │   ├── 📄 up-background-disable-rtl.png
+    │   │   │   ├── 📄 up-background-disable.png
+    │   │   │   ├── 📄 up-background-rtl.png
+    │   │   │   └── 📄 up-background.png
+    │   │   ├── 📁 assets-Dark
+    │   │   │   ├── 📄 arrow-down-insens.png
+    │   │   │   ├── 📄 arrow-down-prelight.png
+    │   │   │   ├── 📄 arrow-down-small-insens.png
+    │   │   │   ├── 📄 arrow-down-small-prelight.png
+    │   │   │   ├── 📄 arrow-down-small.png
+    │   │   │   ├── 📄 arrow-down.png
+    │   │   │   ├── 📄 arrow-left-insens.png
+    │   │   │   ├── 📄 arrow-left-prelight.png
+    │   │   │   ├── 📄 arrow-left.png
+    │   │   │   ├── 📄 arrow-right-insens.png
+    │   │   │   ├── 📄 arrow-right-prelight.png
+    │   │   │   ├── 📄 arrow-right.png
+    │   │   │   ├── 📄 arrow-up-insens.png
+    │   │   │   ├── 📄 arrow-up-prelight.png
+    │   │   │   ├── 📄 arrow-up-small-insens.png
+    │   │   │   ├── 📄 arrow-up-small-prelight.png
+    │   │   │   ├── 📄 arrow-up-small.png
+    │   │   │   ├── 📄 arrow-up.png
+    │   │   │   ├── 📄 button-active.png
+    │   │   │   ├── 📄 button-hover.png
+    │   │   │   ├── 📄 button-insensitive.png
+    │   │   │   ├── 📄 button.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 combo-entry-border-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-border-focus.png
+    │   │   │   ├── 📄 combo-entry-border-rtl.png
+    │   │   │   ├── 📄 combo-entry-border.png
+    │   │   │   ├── 📄 combo-entry-button-active-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-active.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive.png
+    │   │   │   ├── 📄 combo-entry-button-rtl.png
+    │   │   │   ├── 📄 combo-entry-button.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook.png
+    │   │   │   ├── 📄 combo-entry-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook.png
+    │   │   │   ├── 📄 combo-entry-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive.png
+    │   │   │   ├── 📄 combo-entry-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-notebook.png
+    │   │   │   ├── 📄 combo-entry-rtl.png
+    │   │   │   ├── 📄 combo-entry.png
+    │   │   │   ├── 📄 down-background-disable-rtl.png
+    │   │   │   ├── 📄 down-background-disable.png
+    │   │   │   ├── 📄 down-background-rtl.png
+    │   │   │   ├── 📄 down-background.png
+    │   │   │   ├── 📄 entry-active-bg.png
+    │   │   │   ├── 📄 entry-active-notebook.png
+    │   │   │   ├── 📄 entry-active-toolbar.png
+    │   │   │   ├── 📄 entry-background-disabled.png
+    │   │   │   ├── 📄 entry-background.png
+    │   │   │   ├── 📄 entry-bg.png
+    │   │   │   ├── 📄 entry-border-active-bg.png
+    │   │   │   ├── 📄 entry-border-bg.png
+    │   │   │   ├── 📄 entry-disabled-bg.png
+    │   │   │   ├── 📄 entry-disabled-notebook.png
+    │   │   │   ├── 📄 entry-disabled-toolbar.png
+    │   │   │   ├── 📄 entry-notebook.png
+    │   │   │   ├── 📄 entry-toolbar.png
+    │   │   │   ├── 📄 focus-line.png
+    │   │   │   ├── 📄 frame-gap-end.png
+    │   │   │   ├── 📄 frame-gap-start.png
+    │   │   │   ├── 📄 frame.png
+    │   │   │   ├── 📄 handle-h.png
+    │   │   │   ├── 📄 handle-v.png
+    │   │   │   ├── 📄 inline-toolbar.png
+    │   │   │   ├── 📄 line-h.png
+    │   │   │   ├── 📄 line-v.png
+    │   │   │   ├── 📄 menu-arrow-prelight.png
+    │   │   │   ├── 📄 menu-arrow.png
+    │   │   │   ├── 📄 menu-checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-checked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-checked.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked.png
+    │   │   │   ├── 📄 menu-radio-checked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-checked-selected.png
+    │   │   │   ├── 📄 menu-radio-checked.png
+    │   │   │   ├── 📄 menu-radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-unchecked-selected.png
+    │   │   │   ├── 📄 menu-radio-unchecked.png
+    │   │   │   ├── 📄 menubar.png
+    │   │   │   ├── 📄 menubar_button.png
+    │   │   │   ├── 📄 menuitem.png
+    │   │   │   ├── 📄 minus.png
+    │   │   │   ├── 📄 notebook-gap-horiz.png
+    │   │   │   ├── 📄 notebook-gap-vert.png
+    │   │   │   ├── 📄 notebook.png
+    │   │   │   ├── 📄 null.png
+    │   │   │   ├── 📄 pathbar_button_active.png
+    │   │   │   ├── 📄 pathbar_button_prelight.png
+    │   │   │   ├── 📄 plus.png
+    │   │   │   ├── 📄 progressbar.png
+    │   │   │   ├── 📄 progressbar_v.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 slider-horiz-active.png
+    │   │   │   ├── 📄 slider-horiz-insens.png
+    │   │   │   ├── 📄 slider-horiz-prelight.png
+    │   │   │   ├── 📄 slider-horiz.png
+    │   │   │   ├── 📄 slider-insensitive.png
+    │   │   │   ├── 📄 slider-prelight.png
+    │   │   │   ├── 📄 slider-vert-active.png
+    │   │   │   ├── 📄 slider-vert-insens.png
+    │   │   │   ├── 📄 slider-vert-prelight.png
+    │   │   │   ├── 📄 slider-vert.png
+    │   │   │   ├── 📄 slider.png
+    │   │   │   ├── 📄 tab-bottom-active.png
+    │   │   │   ├── 📄 tab-left-active.png
+    │   │   │   ├── 📄 tab-right-active.png
+    │   │   │   ├── 📄 tab-top-active.png
+    │   │   │   ├── 📄 toolbar.png
+    │   │   │   ├── 📄 tree_header.png
+    │   │   │   ├── 📄 trough-horizontal-active.png
+    │   │   │   ├── 📄 trough-horizontal.png
+    │   │   │   ├── 📄 trough-progressbar.png
+    │   │   │   ├── 📄 trough-progressbar_v.png
+    │   │   │   ├── 📄 trough-scrollbar-horiz.png
+    │   │   │   ├── 📄 trough-scrollbar-vert.png
+    │   │   │   ├── 📄 trough-vertical-active.png
+    │   │   │   ├── 📄 trough-vertical.png
+    │   │   │   ├── 📄 up-background-disable-rtl.png
+    │   │   │   ├── 📄 up-background-disable.png
+    │   │   │   ├── 📄 up-background-rtl.png
+    │   │   │   └── 📄 up-background.png
+    │   │   ├── 📄 assets-Dark.svg
+    │   │   ├── 📁 assets-Manjaro
+    │   │   │   ├── 📄 arrow-down-insens.png
+    │   │   │   ├── 📄 arrow-down-prelight.png
+    │   │   │   ├── 📄 arrow-down-small-insens.png
+    │   │   │   ├── 📄 arrow-down-small-prelight.png
+    │   │   │   ├── 📄 arrow-down-small.png
+    │   │   │   ├── 📄 arrow-down.png
+    │   │   │   ├── 📄 arrow-left-insens.png
+    │   │   │   ├── 📄 arrow-left-prelight.png
+    │   │   │   ├── 📄 arrow-left.png
+    │   │   │   ├── 📄 arrow-right-insens.png
+    │   │   │   ├── 📄 arrow-right-prelight.png
+    │   │   │   ├── 📄 arrow-right.png
+    │   │   │   ├── 📄 arrow-up-insens.png
+    │   │   │   ├── 📄 arrow-up-prelight.png
+    │   │   │   ├── 📄 arrow-up-small-insens.png
+    │   │   │   ├── 📄 arrow-up-small-prelight.png
+    │   │   │   ├── 📄 arrow-up-small.png
+    │   │   │   ├── 📄 arrow-up.png
+    │   │   │   ├── 📄 button-active.png
+    │   │   │   ├── 📄 button-hover.png
+    │   │   │   ├── 📄 button-insensitive.png
+    │   │   │   ├── 📄 button.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 combo-entry-border-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-border-focus.png
+    │   │   │   ├── 📄 combo-entry-border-rtl.png
+    │   │   │   ├── 📄 combo-entry-border.png
+    │   │   │   ├── 📄 combo-entry-button-active-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-active.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive.png
+    │   │   │   ├── 📄 combo-entry-button-rtl.png
+    │   │   │   ├── 📄 combo-entry-button.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook.png
+    │   │   │   ├── 📄 combo-entry-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook.png
+    │   │   │   ├── 📄 combo-entry-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive.png
+    │   │   │   ├── 📄 combo-entry-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-notebook.png
+    │   │   │   ├── 📄 combo-entry-rtl.png
+    │   │   │   ├── 📄 combo-entry.png
+    │   │   │   ├── 📄 down-background-disable-rtl.png
+    │   │   │   ├── 📄 down-background-disable.png
+    │   │   │   ├── 📄 down-background-rtl.png
+    │   │   │   ├── 📄 down-background.png
+    │   │   │   ├── 📄 entry-active-bg.png
+    │   │   │   ├── 📄 entry-active-notebook.png
+    │   │   │   ├── 📄 entry-active-toolbar.png
+    │   │   │   ├── 📄 entry-background-disabled.png
+    │   │   │   ├── 📄 entry-background.png
+    │   │   │   ├── 📄 entry-bg.png
+    │   │   │   ├── 📄 entry-border-active-bg.png
+    │   │   │   ├── 📄 entry-border-bg.png
+    │   │   │   ├── 📄 entry-disabled-bg.png
+    │   │   │   ├── 📄 entry-disabled-notebook.png
+    │   │   │   ├── 📄 entry-disabled-toolbar.png
+    │   │   │   ├── 📄 entry-notebook.png
+    │   │   │   ├── 📄 entry-toolbar.png
+    │   │   │   ├── 📄 focus-line.png
+    │   │   │   ├── 📄 frame-gap-end.png
+    │   │   │   ├── 📄 frame-gap-start.png
+    │   │   │   ├── 📄 frame.png
+    │   │   │   ├── 📄 handle-h.png
+    │   │   │   ├── 📄 handle-v.png
+    │   │   │   ├── 📄 inline-toolbar.png
+    │   │   │   ├── 📄 line-h.png
+    │   │   │   ├── 📄 line-v.png
+    │   │   │   ├── 📄 menu-arrow-prelight.png
+    │   │   │   ├── 📄 menu-arrow.png
+    │   │   │   ├── 📄 menu-checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-checked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-checked.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked.png
+    │   │   │   ├── 📄 menu-radio-checked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-checked-selected.png
+    │   │   │   ├── 📄 menu-radio-checked.png
+    │   │   │   ├── 📄 menu-radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-unchecked-selected.png
+    │   │   │   ├── 📄 menu-radio-unchecked.png
+    │   │   │   ├── 📄 menubar-dark.png
+    │   │   │   ├── 📄 menubar.png
+    │   │   │   ├── 📄 menubar_button.png
+    │   │   │   ├── 📄 menuitem.png
+    │   │   │   ├── 📄 minus.png
+    │   │   │   ├── 📄 notebook-gap-horiz.png
+    │   │   │   ├── 📄 notebook-gap-vert.png
+    │   │   │   ├── 📄 notebook.png
+    │   │   │   ├── 📄 null.png
+    │   │   │   ├── 📄 pathbar_button_active.png
+    │   │   │   ├── 📄 pathbar_button_prelight.png
+    │   │   │   ├── 📄 plus.png
+    │   │   │   ├── 📄 progressbar.png
+    │   │   │   ├── 📄 progressbar_v.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 slider-horiz-active.png
+    │   │   │   ├── 📄 slider-horiz-insens.png
+    │   │   │   ├── 📄 slider-horiz-prelight.png
+    │   │   │   ├── 📄 slider-horiz.png
+    │   │   │   ├── 📄 slider-insensitive.png
+    │   │   │   ├── 📄 slider-prelight.png
+    │   │   │   ├── 📄 slider-vert-active.png
+    │   │   │   ├── 📄 slider-vert-insens.png
+    │   │   │   ├── 📄 slider-vert-prelight.png
+    │   │   │   ├── 📄 slider-vert.png
+    │   │   │   ├── 📄 slider.png
+    │   │   │   ├── 📄 tab-bottom-active.png
+    │   │   │   ├── 📄 tab-left-active.png
+    │   │   │   ├── 📄 tab-right-active.png
+    │   │   │   ├── 📄 tab-top-active.png
+    │   │   │   ├── 📄 toolbar.png
+    │   │   │   ├── 📄 tree_header.png
+    │   │   │   ├── 📄 trough-horizontal-active.png
+    │   │   │   ├── 📄 trough-horizontal.png
+    │   │   │   ├── 📄 trough-progressbar.png
+    │   │   │   ├── 📄 trough-progressbar_v.png
+    │   │   │   ├── 📄 trough-scrollbar-horiz.png
+    │   │   │   ├── 📄 trough-scrollbar-vert.png
+    │   │   │   ├── 📄 trough-vertical-active.png
+    │   │   │   ├── 📄 trough-vertical.png
+    │   │   │   ├── 📄 up-background-disable-rtl.png
+    │   │   │   ├── 📄 up-background-disable.png
+    │   │   │   ├── 📄 up-background-rtl.png
+    │   │   │   └── 📄 up-background.png
+    │   │   ├── 📁 assets-Manjaro-Dark
+    │   │   │   ├── 📄 arrow-down-insens.png
+    │   │   │   ├── 📄 arrow-down-prelight.png
+    │   │   │   ├── 📄 arrow-down-small-insens.png
+    │   │   │   ├── 📄 arrow-down-small-prelight.png
+    │   │   │   ├── 📄 arrow-down-small.png
+    │   │   │   ├── 📄 arrow-down.png
+    │   │   │   ├── 📄 arrow-left-insens.png
+    │   │   │   ├── 📄 arrow-left-prelight.png
+    │   │   │   ├── 📄 arrow-left.png
+    │   │   │   ├── 📄 arrow-right-insens.png
+    │   │   │   ├── 📄 arrow-right-prelight.png
+    │   │   │   ├── 📄 arrow-right.png
+    │   │   │   ├── 📄 arrow-up-insens.png
+    │   │   │   ├── 📄 arrow-up-prelight.png
+    │   │   │   ├── 📄 arrow-up-small-insens.png
+    │   │   │   ├── 📄 arrow-up-small-prelight.png
+    │   │   │   ├── 📄 arrow-up-small.png
+    │   │   │   ├── 📄 arrow-up.png
+    │   │   │   ├── 📄 button-active.png
+    │   │   │   ├── 📄 button-hover.png
+    │   │   │   ├── 📄 button-insensitive.png
+    │   │   │   ├── 📄 button.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 combo-entry-border-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-border-focus.png
+    │   │   │   ├── 📄 combo-entry-border-rtl.png
+    │   │   │   ├── 📄 combo-entry-border.png
+    │   │   │   ├── 📄 combo-entry-button-active-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-active.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive.png
+    │   │   │   ├── 📄 combo-entry-button-rtl.png
+    │   │   │   ├── 📄 combo-entry-button.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook.png
+    │   │   │   ├── 📄 combo-entry-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook.png
+    │   │   │   ├── 📄 combo-entry-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive.png
+    │   │   │   ├── 📄 combo-entry-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-notebook.png
+    │   │   │   ├── 📄 combo-entry-rtl.png
+    │   │   │   ├── 📄 combo-entry.png
+    │   │   │   ├── 📄 down-background-disable-rtl.png
+    │   │   │   ├── 📄 down-background-disable.png
+    │   │   │   ├── 📄 down-background-rtl.png
+    │   │   │   ├── 📄 down-background.png
+    │   │   │   ├── 📄 entry-active-bg.png
+    │   │   │   ├── 📄 entry-active-notebook.png
+    │   │   │   ├── 📄 entry-active-toolbar.png
+    │   │   │   ├── 📄 entry-background-disabled.png
+    │   │   │   ├── 📄 entry-background.png
+    │   │   │   ├── 📄 entry-bg.png
+    │   │   │   ├── 📄 entry-border-active-bg.png
+    │   │   │   ├── 📄 entry-border-bg.png
+    │   │   │   ├── 📄 entry-disabled-bg.png
+    │   │   │   ├── 📄 entry-disabled-notebook.png
+    │   │   │   ├── 📄 entry-disabled-toolbar.png
+    │   │   │   ├── 📄 entry-notebook.png
+    │   │   │   ├── 📄 entry-toolbar.png
+    │   │   │   ├── 📄 focus-line.png
+    │   │   │   ├── 📄 frame-gap-end.png
+    │   │   │   ├── 📄 frame-gap-start.png
+    │   │   │   ├── 📄 frame.png
+    │   │   │   ├── 📄 handle-h.png
+    │   │   │   ├── 📄 handle-v.png
+    │   │   │   ├── 📄 inline-toolbar.png
+    │   │   │   ├── 📄 line-h.png
+    │   │   │   ├── 📄 line-v.png
+    │   │   │   ├── 📄 menu-arrow-prelight.png
+    │   │   │   ├── 📄 menu-arrow.png
+    │   │   │   ├── 📄 menu-checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-checked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-checked.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked.png
+    │   │   │   ├── 📄 menu-radio-checked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-checked-selected.png
+    │   │   │   ├── 📄 menu-radio-checked.png
+    │   │   │   ├── 📄 menu-radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-unchecked-selected.png
+    │   │   │   ├── 📄 menu-radio-unchecked.png
+    │   │   │   ├── 📄 menubar.png
+    │   │   │   ├── 📄 menubar_button.png
+    │   │   │   ├── 📄 menuitem.png
+    │   │   │   ├── 📄 minus.png
+    │   │   │   ├── 📄 notebook-gap-horiz.png
+    │   │   │   ├── 📄 notebook-gap-vert.png
+    │   │   │   ├── 📄 notebook.png
+    │   │   │   ├── 📄 null.png
+    │   │   │   ├── 📄 pathbar_button_active.png
+    │   │   │   ├── 📄 pathbar_button_prelight.png
+    │   │   │   ├── 📄 plus.png
+    │   │   │   ├── 📄 progressbar.png
+    │   │   │   ├── 📄 progressbar_v.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 slider-horiz-active.png
+    │   │   │   ├── 📄 slider-horiz-insens.png
+    │   │   │   ├── 📄 slider-horiz-prelight.png
+    │   │   │   ├── 📄 slider-horiz.png
+    │   │   │   ├── 📄 slider-insensitive.png
+    │   │   │   ├── 📄 slider-prelight.png
+    │   │   │   ├── 📄 slider-vert-active.png
+    │   │   │   ├── 📄 slider-vert-insens.png
+    │   │   │   ├── 📄 slider-vert-prelight.png
+    │   │   │   ├── 📄 slider-vert.png
+    │   │   │   ├── 📄 slider.png
+    │   │   │   ├── 📄 tab-bottom-active.png
+    │   │   │   ├── 📄 tab-left-active.png
+    │   │   │   ├── 📄 tab-right-active.png
+    │   │   │   ├── 📄 tab-top-active.png
+    │   │   │   ├── 📄 toolbar.png
+    │   │   │   ├── 📄 tree_header.png
+    │   │   │   ├── 📄 trough-horizontal-active.png
+    │   │   │   ├── 📄 trough-horizontal.png
+    │   │   │   ├── 📄 trough-progressbar.png
+    │   │   │   ├── 📄 trough-progressbar_v.png
+    │   │   │   ├── 📄 trough-scrollbar-horiz.png
+    │   │   │   ├── 📄 trough-scrollbar-vert.png
+    │   │   │   ├── 📄 trough-vertical-active.png
+    │   │   │   ├── 📄 trough-vertical.png
+    │   │   │   ├── 📄 up-background-disable-rtl.png
+    │   │   │   ├── 📄 up-background-disable.png
+    │   │   │   ├── 📄 up-background-rtl.png
+    │   │   │   └── 📄 up-background.png
+    │   │   ├── 📄 assets-Manjaro-Dark.svg
+    │   │   ├── 📄 assets-Manjaro.svg
+    │   │   ├── 📁 assets-Ubuntu
+    │   │   │   ├── 📄 arrow-down-insens.png
+    │   │   │   ├── 📄 arrow-down-prelight.png
+    │   │   │   ├── 📄 arrow-down-small-insens.png
+    │   │   │   ├── 📄 arrow-down-small-prelight.png
+    │   │   │   ├── 📄 arrow-down-small.png
+    │   │   │   ├── 📄 arrow-down.png
+    │   │   │   ├── 📄 arrow-left-insens.png
+    │   │   │   ├── 📄 arrow-left-prelight.png
+    │   │   │   ├── 📄 arrow-left.png
+    │   │   │   ├── 📄 arrow-right-insens.png
+    │   │   │   ├── 📄 arrow-right-prelight.png
+    │   │   │   ├── 📄 arrow-right.png
+    │   │   │   ├── 📄 arrow-up-insens.png
+    │   │   │   ├── 📄 arrow-up-prelight.png
+    │   │   │   ├── 📄 arrow-up-small-insens.png
+    │   │   │   ├── 📄 arrow-up-small-prelight.png
+    │   │   │   ├── 📄 arrow-up-small.png
+    │   │   │   ├── 📄 arrow-up.png
+    │   │   │   ├── 📄 button-active.png
+    │   │   │   ├── 📄 button-hover.png
+    │   │   │   ├── 📄 button-insensitive.png
+    │   │   │   ├── 📄 button.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 combo-entry-border-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-border-focus.png
+    │   │   │   ├── 📄 combo-entry-border-rtl.png
+    │   │   │   ├── 📄 combo-entry-border.png
+    │   │   │   ├── 📄 combo-entry-button-active-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-active.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive.png
+    │   │   │   ├── 📄 combo-entry-button-rtl.png
+    │   │   │   ├── 📄 combo-entry-button.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook.png
+    │   │   │   ├── 📄 combo-entry-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook.png
+    │   │   │   ├── 📄 combo-entry-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive.png
+    │   │   │   ├── 📄 combo-entry-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-notebook.png
+    │   │   │   ├── 📄 combo-entry-rtl.png
+    │   │   │   ├── 📄 combo-entry.png
+    │   │   │   ├── 📄 down-background-disable-rtl.png
+    │   │   │   ├── 📄 down-background-disable.png
+    │   │   │   ├── 📄 down-background-rtl.png
+    │   │   │   ├── 📄 down-background.png
+    │   │   │   ├── 📄 entry-active-bg.png
+    │   │   │   ├── 📄 entry-active-notebook.png
+    │   │   │   ├── 📄 entry-active-toolbar.png
+    │   │   │   ├── 📄 entry-background-disabled.png
+    │   │   │   ├── 📄 entry-background.png
+    │   │   │   ├── 📄 entry-bg.png
+    │   │   │   ├── 📄 entry-border-active-bg.png
+    │   │   │   ├── 📄 entry-border-bg.png
+    │   │   │   ├── 📄 entry-disabled-bg.png
+    │   │   │   ├── 📄 entry-disabled-notebook.png
+    │   │   │   ├── 📄 entry-disabled-toolbar.png
+    │   │   │   ├── 📄 entry-notebook.png
+    │   │   │   ├── 📄 entry-toolbar.png
+    │   │   │   ├── 📄 focus-line.png
+    │   │   │   ├── 📄 frame-gap-end.png
+    │   │   │   ├── 📄 frame-gap-start.png
+    │   │   │   ├── 📄 frame.png
+    │   │   │   ├── 📄 handle-h.png
+    │   │   │   ├── 📄 handle-v.png
+    │   │   │   ├── 📄 inline-toolbar.png
+    │   │   │   ├── 📄 line-h.png
+    │   │   │   ├── 📄 line-v.png
+    │   │   │   ├── 📄 menu-arrow-prelight.png
+    │   │   │   ├── 📄 menu-arrow.png
+    │   │   │   ├── 📄 menu-checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-checked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-checked.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked.png
+    │   │   │   ├── 📄 menu-radio-checked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-checked-selected.png
+    │   │   │   ├── 📄 menu-radio-checked.png
+    │   │   │   ├── 📄 menu-radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-unchecked-selected.png
+    │   │   │   ├── 📄 menu-radio-unchecked.png
+    │   │   │   ├── 📄 menubar-dark.png
+    │   │   │   ├── 📄 menubar.png
+    │   │   │   ├── 📄 menubar_button.png
+    │   │   │   ├── 📄 menuitem.png
+    │   │   │   ├── 📄 minus.png
+    │   │   │   ├── 📄 notebook-gap-horiz.png
+    │   │   │   ├── 📄 notebook-gap-vert.png
+    │   │   │   ├── 📄 notebook.png
+    │   │   │   ├── 📄 null.png
+    │   │   │   ├── 📄 pathbar_button_active.png
+    │   │   │   ├── 📄 pathbar_button_prelight.png
+    │   │   │   ├── 📄 plus.png
+    │   │   │   ├── 📄 progressbar.png
+    │   │   │   ├── 📄 progressbar_v.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 slider-horiz-active.png
+    │   │   │   ├── 📄 slider-horiz-insens.png
+    │   │   │   ├── 📄 slider-horiz-prelight.png
+    │   │   │   ├── 📄 slider-horiz.png
+    │   │   │   ├── 📄 slider-insensitive.png
+    │   │   │   ├── 📄 slider-prelight.png
+    │   │   │   ├── 📄 slider-vert-active.png
+    │   │   │   ├── 📄 slider-vert-insens.png
+    │   │   │   ├── 📄 slider-vert-prelight.png
+    │   │   │   ├── 📄 slider-vert.png
+    │   │   │   ├── 📄 slider.png
+    │   │   │   ├── 📄 tab-bottom-active.png
+    │   │   │   ├── 📄 tab-left-active.png
+    │   │   │   ├── 📄 tab-right-active.png
+    │   │   │   ├── 📄 tab-top-active.png
+    │   │   │   ├── 📄 toolbar.png
+    │   │   │   ├── 📄 tree_header.png
+    │   │   │   ├── 📄 trough-horizontal-active.png
+    │   │   │   ├── 📄 trough-horizontal.png
+    │   │   │   ├── 📄 trough-progressbar.png
+    │   │   │   ├── 📄 trough-progressbar_v.png
+    │   │   │   ├── 📄 trough-scrollbar-horiz.png
+    │   │   │   ├── 📄 trough-scrollbar-vert.png
+    │   │   │   ├── 📄 trough-vertical-active.png
+    │   │   │   ├── 📄 trough-vertical.png
+    │   │   │   ├── 📄 up-background-disable-rtl.png
+    │   │   │   ├── 📄 up-background-disable.png
+    │   │   │   ├── 📄 up-background-rtl.png
+    │   │   │   └── 📄 up-background.png
+    │   │   ├── 📁 assets-Ubuntu-Dark
+    │   │   │   ├── 📄 arrow-down-insens.png
+    │   │   │   ├── 📄 arrow-down-prelight.png
+    │   │   │   ├── 📄 arrow-down-small-insens.png
+    │   │   │   ├── 📄 arrow-down-small-prelight.png
+    │   │   │   ├── 📄 arrow-down-small.png
+    │   │   │   ├── 📄 arrow-down.png
+    │   │   │   ├── 📄 arrow-left-insens.png
+    │   │   │   ├── 📄 arrow-left-prelight.png
+    │   │   │   ├── 📄 arrow-left.png
+    │   │   │   ├── 📄 arrow-right-insens.png
+    │   │   │   ├── 📄 arrow-right-prelight.png
+    │   │   │   ├── 📄 arrow-right.png
+    │   │   │   ├── 📄 arrow-up-insens.png
+    │   │   │   ├── 📄 arrow-up-prelight.png
+    │   │   │   ├── 📄 arrow-up-small-insens.png
+    │   │   │   ├── 📄 arrow-up-small-prelight.png
+    │   │   │   ├── 📄 arrow-up-small.png
+    │   │   │   ├── 📄 arrow-up.png
+    │   │   │   ├── 📄 button-active.png
+    │   │   │   ├── 📄 button-hover.png
+    │   │   │   ├── 📄 button-insensitive.png
+    │   │   │   ├── 📄 button.png
+    │   │   │   ├── 📄 checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 checkbox-checked.png
+    │   │   │   ├── 📄 checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 checkbox-unchecked.png
+    │   │   │   ├── 📄 combo-entry-border-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-border-focus.png
+    │   │   │   ├── 📄 combo-entry-border-rtl.png
+    │   │   │   ├── 📄 combo-entry-border.png
+    │   │   │   ├── 📄 combo-entry-button-active-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-active.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-button-insensitive.png
+    │   │   │   ├── 📄 combo-entry-button-rtl.png
+    │   │   │   ├── 📄 combo-entry-button.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus-notebook.png
+    │   │   │   ├── 📄 combo-entry-focus-rtl.png
+    │   │   │   ├── 📄 combo-entry-focus.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive-notebook.png
+    │   │   │   ├── 📄 combo-entry-insensitive-rtl.png
+    │   │   │   ├── 📄 combo-entry-insensitive.png
+    │   │   │   ├── 📄 combo-entry-notebook-rtl.png
+    │   │   │   ├── 📄 combo-entry-notebook.png
+    │   │   │   ├── 📄 combo-entry-rtl.png
+    │   │   │   ├── 📄 combo-entry.png
+    │   │   │   ├── 📄 down-background-disable-rtl.png
+    │   │   │   ├── 📄 down-background-disable.png
+    │   │   │   ├── 📄 down-background-rtl.png
+    │   │   │   ├── 📄 down-background.png
+    │   │   │   ├── 📄 entry-active-bg.png
+    │   │   │   ├── 📄 entry-active-notebook.png
+    │   │   │   ├── 📄 entry-active-toolbar.png
+    │   │   │   ├── 📄 entry-background-disabled.png
+    │   │   │   ├── 📄 entry-background.png
+    │   │   │   ├── 📄 entry-bg.png
+    │   │   │   ├── 📄 entry-border-active-bg.png
+    │   │   │   ├── 📄 entry-border-bg.png
+    │   │   │   ├── 📄 entry-disabled-bg.png
+    │   │   │   ├── 📄 entry-disabled-notebook.png
+    │   │   │   ├── 📄 entry-disabled-toolbar.png
+    │   │   │   ├── 📄 entry-notebook.png
+    │   │   │   ├── 📄 entry-toolbar.png
+    │   │   │   ├── 📄 focus-line.png
+    │   │   │   ├── 📄 frame-gap-end.png
+    │   │   │   ├── 📄 frame-gap-start.png
+    │   │   │   ├── 📄 frame.png
+    │   │   │   ├── 📄 handle-h.png
+    │   │   │   ├── 📄 handle-v.png
+    │   │   │   ├── 📄 inline-toolbar.png
+    │   │   │   ├── 📄 line-h.png
+    │   │   │   ├── 📄 line-v.png
+    │   │   │   ├── 📄 menu-arrow-prelight.png
+    │   │   │   ├── 📄 menu-arrow.png
+    │   │   │   ├── 📄 menu-checkbox-checked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-checked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-checked.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked-selected.png
+    │   │   │   ├── 📄 menu-checkbox-unchecked.png
+    │   │   │   ├── 📄 menu-radio-checked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-checked-selected.png
+    │   │   │   ├── 📄 menu-radio-checked.png
+    │   │   │   ├── 📄 menu-radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 menu-radio-unchecked-selected.png
+    │   │   │   ├── 📄 menu-radio-unchecked.png
+    │   │   │   ├── 📄 menubar.png
+    │   │   │   ├── 📄 menubar_button.png
+    │   │   │   ├── 📄 menuitem.png
+    │   │   │   ├── 📄 minus.png
+    │   │   │   ├── 📄 notebook-gap-horiz.png
+    │   │   │   ├── 📄 notebook-gap-vert.png
+    │   │   │   ├── 📄 notebook.png
+    │   │   │   ├── 📄 null.png
+    │   │   │   ├── 📄 pathbar_button_active.png
+    │   │   │   ├── 📄 pathbar_button_prelight.png
+    │   │   │   ├── 📄 plus.png
+    │   │   │   ├── 📄 progressbar.png
+    │   │   │   ├── 📄 progressbar_v.png
+    │   │   │   ├── 📄 radio-checked-insensitive.png
+    │   │   │   ├── 📄 radio-checked.png
+    │   │   │   ├── 📄 radio-unchecked-insensitive.png
+    │   │   │   ├── 📄 radio-unchecked.png
+    │   │   │   ├── 📄 slider-horiz-active.png
+    │   │   │   ├── 📄 slider-horiz-insens.png
+    │   │   │   ├── 📄 slider-horiz-prelight.png
+    │   │   │   ├── 📄 slider-horiz.png
+    │   │   │   ├── 📄 slider-insensitive.png
+    │   │   │   ├── 📄 slider-prelight.png
+    │   │   │   ├── 📄 slider-vert-active.png
+    │   │   │   ├── 📄 slider-vert-insens.png
+    │   │   │   ├── 📄 slider-vert-prelight.png
+    │   │   │   ├── 📄 slider-vert.png
+    │   │   │   ├── 📄 slider.png
+    │   │   │   ├── 📄 tab-bottom-active.png
+    │   │   │   ├── 📄 tab-left-active.png
+    │   │   │   ├── 📄 tab-right-active.png
+    │   │   │   ├── 📄 tab-top-active.png
+    │   │   │   ├── 📄 toolbar.png
+    │   │   │   ├── 📄 tree_header.png
+    │   │   │   ├── 📄 trough-horizontal-active.png
+    │   │   │   ├── 📄 trough-horizontal.png
+    │   │   │   ├── 📄 trough-progressbar.png
+    │   │   │   ├── 📄 trough-progressbar_v.png
+    │   │   │   ├── 📄 trough-scrollbar-horiz.png
+    │   │   │   ├── 📄 trough-scrollbar-vert.png
+    │   │   │   ├── 📄 trough-vertical-active.png
+    │   │   │   ├── 📄 trough-vertical.png
+    │   │   │   ├── 📄 up-background-disable-rtl.png
+    │   │   │   ├── 📄 up-background-disable.png
+    │   │   │   ├── 📄 up-background-rtl.png
+    │   │   │   └── 📄 up-background.png
+    │   │   ├── 📄 assets-Ubuntu-Dark.svg
+    │   │   ├── 📄 assets-Ubuntu.svg
+    │   │   ├── 📄 assets.svg
+    │   │   ├── 📄 assets.txt
+    │   │   └── 📄 render-assets.sh
+    │   ├── 📄 main.rc
+    │   ├── 📄 menubar-toolbar-Dark.rc
+    │   ├── 📄 menubar-toolbar-Light.rc
+    │   ├── 📄 menubar-toolbar.rc
+    │   ├── 📄 panel.rc
+    │   ├── 📁 theme
+    │   │   ├── 📄 gtkrc
+    │   │   ├── 📄 gtkrc-Dark
+    │   │   └── 📄 gtkrc-Light
+    │   ├── 📁 theme-Manjaro
+    │   │   ├── 📄 gtkrc
+    │   │   ├── 📄 gtkrc-Dark
+    │   │   └── 📄 gtkrc-Light
+    │   ├── 📁 theme-Ubuntu
+    │   │   ├── 📄 gtkrc
+    │   │   ├── 📄 gtkrc-Dark
+    │   │   └── 📄 gtkrc-Light
+    │   └── 📄 xfce-notify.rc
+    ├── 📁 labwc
+    │   ├── 📁 assets
+    │   │   ├── 📄 close.xbm
+    │   │   ├── 📄 close_hover-active.svg
+    │   │   ├── 📄 close_hover-inactive.svg
+    │   │   ├── 📄 iconify.xbm
+    │   │   ├── 📄 max.xbm
+    │   │   └── 📄 max_toggled.xbm
+    │   ├── 📄 themerc
+    │   ├── 📄 themerc-Dark
+    │   └── 📄 themerc-Light
+    ├── 📁 metacity-1
+    │   ├── 📁 assets
+    │   │   ├── 📄 close.png
+    │   │   ├── 📄 close_focused.png
+    │   │   ├── 📄 close_focused_normal.png
+    │   │   ├── 📄 close_focused_prelight.png
+    │   │   ├── 📄 close_focused_pressed.png
+    │   │   ├── 📄 close_unfocused.png
+    │   │   ├── 📄 close_unfocused_prelight.png
+    │   │   ├── 📄 close_unfocused_pressed.png
+    │   │   ├── 📄 maximize.png
+    │   │   ├── 📄 maximize_focused.png
+    │   │   ├── 📄 maximize_focused_normal.png
+    │   │   ├── 📄 maximize_focused_prelight.png
+    │   │   ├── 📄 maximize_focused_pressed.png
+    │   │   ├── 📄 maximize_unfocused.png
+    │   │   ├── 📄 maximize_unfocused_prelight.png
+    │   │   ├── 📄 maximize_unfocused_pressed.png
+    │   │   ├── 📄 menu.png
+    │   │   ├── 📄 menu_focused.png
+    │   │   ├── 📄 menu_focused_normal.png
+    │   │   ├── 📄 menu_focused_prelight.png
+    │   │   ├── 📄 menu_focused_pressed.png
+    │   │   ├── 📄 menu_unfocused.png
+    │   │   ├── 📄 menu_unfocused_prelight.png
+    │   │   ├── 📄 menu_unfocused_pressed.png
+    │   │   ├── 📄 minimize.png
+    │   │   ├── 📄 minimize_focused.png
+    │   │   ├── 📄 minimize_focused_normal.png
+    │   │   ├── 📄 minimize_focused_prelight.png
+    │   │   ├── 📄 minimize_focused_pressed.png
+    │   │   ├── 📄 minimize_unfocused.png
+    │   │   ├── 📄 minimize_unfocused_prelight.png
+    │   │   ├── 📄 minimize_unfocused_pressed.png
+    │   │   ├── 📄 shade.png
+    │   │   ├── 📄 shade_focused.png
+    │   │   ├── 📄 shade_focused_normal.png
+    │   │   ├── 📄 shade_focused_prelight.png
+    │   │   ├── 📄 shade_focused_pressed.png
+    │   │   ├── 📄 shade_unfocused.png
+    │   │   ├── 📄 shade_unfocused_prelight.png
+    │   │   ├── 📄 shade_unfocused_pressed.png
+    │   │   ├── 📄 unmaximize.png
+    │   │   ├── 📄 unmaximize_focused.png
+    │   │   ├── 📄 unmaximize_focused_normal.png
+    │   │   ├── 📄 unmaximize_focused_prelight.png
+    │   │   ├── 📄 unmaximize_focused_pressed.png
+    │   │   ├── 📄 unmaximize_unfocused.png
+    │   │   ├── 📄 unmaximize_unfocused_prelight.png
+    │   │   ├── 📄 unmaximize_unfocused_pressed.png
+    │   │   ├── 📄 unshade.png
+    │   │   ├── 📄 unshade_focused.png
+    │   │   ├── 📄 unshade_focused_normal.png
+    │   │   ├── 📄 unshade_focused_prelight.png
+    │   │   ├── 📄 unshade_focused_pressed.png
+    │   │   ├── 📄 unshade_unfocused.png
+    │   │   ├── 📄 unshade_unfocused_prelight.png
+    │   │   └── 📄 unshade_unfocused_pressed.png
+    │   ├── 📁 assets-Light
+    │   │   ├── 📄 close.png
+    │   │   ├── 📄 close_focused.png
+    │   │   ├── 📄 close_focused_normal.png
+    │   │   ├── 📄 close_focused_prelight.png
+    │   │   ├── 📄 close_focused_pressed.png
+    │   │   ├── 📄 close_unfocused.png
+    │   │   ├── 📄 close_unfocused_prelight.png
+    │   │   ├── 📄 close_unfocused_pressed.png
+    │   │   ├── 📄 maximize.png
+    │   │   ├── 📄 maximize_focused.png
+    │   │   ├── 📄 maximize_focused_normal.png
+    │   │   ├── 📄 maximize_focused_prelight.png
+    │   │   ├── 📄 maximize_focused_pressed.png
+    │   │   ├── 📄 maximize_unfocused.png
+    │   │   ├── 📄 maximize_unfocused_prelight.png
+    │   │   ├── 📄 maximize_unfocused_pressed.png
+    │   │   ├── 📄 menu.png
+    │   │   ├── 📄 menu_focused.png
+    │   │   ├── 📄 menu_focused_normal.png
+    │   │   ├── 📄 menu_focused_prelight.png
+    │   │   ├── 📄 menu_focused_pressed.png
+    │   │   ├── 📄 menu_unfocused.png
+    │   │   ├── 📄 menu_unfocused_prelight.png
+    │   │   ├── 📄 menu_unfocused_pressed.png
+    │   │   ├── 📄 minimize.png
+    │   │   ├── 📄 minimize_focused.png
+    │   │   ├── 📄 minimize_focused_normal.png
+    │   │   ├── 📄 minimize_focused_prelight.png
+    │   │   ├── 📄 minimize_focused_pressed.png
+    │   │   ├── 📄 minimize_unfocused.png
+    │   │   ├── 📄 minimize_unfocused_prelight.png
+    │   │   ├── 📄 minimize_unfocused_pressed.png
+    │   │   ├── 📄 shade.png
+    │   │   ├── 📄 shade_focused.png
+    │   │   ├── 📄 shade_focused_normal.png
+    │   │   ├── 📄 shade_focused_prelight.png
+    │   │   ├── 📄 shade_focused_pressed.png
+    │   │   ├── 📄 shade_unfocused.png
+    │   │   ├── 📄 shade_unfocused_prelight.png
+    │   │   ├── 📄 shade_unfocused_pressed.png
+    │   │   ├── 📄 unmaximize.png
+    │   │   ├── 📄 unmaximize_focused.png
+    │   │   ├── 📄 unmaximize_focused_normal.png
+    │   │   ├── 📄 unmaximize_focused_prelight.png
+    │   │   ├── 📄 unmaximize_focused_pressed.png
+    │   │   ├── 📄 unmaximize_unfocused.png
+    │   │   ├── 📄 unmaximize_unfocused_prelight.png
+    │   │   ├── 📄 unmaximize_unfocused_pressed.png
+    │   │   ├── 📄 unshade.png
+    │   │   ├── 📄 unshade_focused.png
+    │   │   ├── 📄 unshade_focused_normal.png
+    │   │   ├── 📄 unshade_focused_prelight.png
+    │   │   ├── 📄 unshade_focused_pressed.png
+    │   │   ├── 📄 unshade_unfocused.png
+    │   │   ├── 📄 unshade_unfocused_prelight.png
+    │   │   └── 📄 unshade_unfocused_pressed.png
+    │   ├── 📄 assets-Light.svg
+    │   ├── 📁 assets-Round
+    │   │   ├── 📄 button.svg
+    │   │   ├── 📄 close.svg
+    │   │   ├── 📄 maximize.svg
+    │   │   ├── 📄 menu.svg
+    │   │   ├── 📄 minimize.svg
+    │   │   ├── 📄 shade.svg
+    │   │   ├── 📄 unmaximize.svg
+    │   │   └── 📄 unshade.svg
+    │   ├── 📁 assets-Win
+    │   │   ├── 📄 close.png
+    │   │   ├── 📄 close_focused.png
+    │   │   ├── 📄 close_focused_normal.png
+    │   │   ├── 📄 close_focused_prelight.png
+    │   │   ├── 📄 close_focused_pressed.png
+    │   │   ├── 📄 close_unfocused.png
+    │   │   ├── 📄 close_unfocused_prelight.png
+    │   │   ├── 📄 close_unfocused_pressed.png
+    │   │   ├── 📄 maximize.png
+    │   │   ├── 📄 maximize_focused.png
+    │   │   ├── 📄 maximize_focused_normal.png
+    │   │   ├── 📄 maximize_focused_prelight.png
+    │   │   ├── 📄 maximize_focused_pressed.png
+    │   │   ├── 📄 maximize_unfocused.png
+    │   │   ├── 📄 maximize_unfocused_prelight.png
+    │   │   ├── 📄 maximize_unfocused_pressed.png
+    │   │   ├── 📄 menu.png
+    │   │   ├── 📄 menu_focused.png
+    │   │   ├── 📄 menu_focused_normal.png
+    │   │   ├── 📄 menu_focused_prelight.png
+    │   │   ├── 📄 menu_focused_pressed.png
+    │   │   ├── 📄 menu_unfocused.png
+    │   │   ├── 📄 menu_unfocused_prelight.png
+    │   │   ├── 📄 menu_unfocused_pressed.png
+    │   │   ├── 📄 minimize.png
+    │   │   ├── 📄 minimize_focused.png
+    │   │   ├── 📄 minimize_focused_normal.png
+    │   │   ├── 📄 minimize_focused_prelight.png
+    │   │   ├── 📄 minimize_focused_pressed.png
+    │   │   ├── 📄 minimize_unfocused.png
+    │   │   ├── 📄 minimize_unfocused_prelight.png
+    │   │   ├── 📄 minimize_unfocused_pressed.png
+    │   │   ├── 📄 shade.png
+    │   │   ├── 📄 shade_focused.png
+    │   │   ├── 📄 shade_focused_normal.png
+    │   │   ├── 📄 shade_focused_prelight.png
+    │   │   ├── 📄 shade_focused_pressed.png
+    │   │   ├── 📄 shade_unfocused.png
+    │   │   ├── 📄 shade_unfocused_prelight.png
+    │   │   ├── 📄 shade_unfocused_pressed.png
+    │   │   ├── 📄 unmaximize.png
+    │   │   ├── 📄 unmaximize_focused.png
+    │   │   ├── 📄 unmaximize_focused_normal.png
+    │   │   ├── 📄 unmaximize_focused_prelight.png
+    │   │   ├── 📄 unmaximize_focused_pressed.png
+    │   │   ├── 📄 unmaximize_unfocused.png
+    │   │   ├── 📄 unmaximize_unfocused_prelight.png
+    │   │   ├── 📄 unmaximize_unfocused_pressed.png
+    │   │   ├── 📄 unshade.png
+    │   │   ├── 📄 unshade_focused.png
+    │   │   ├── 📄 unshade_focused_normal.png
+    │   │   ├── 📄 unshade_focused_prelight.png
+    │   │   ├── 📄 unshade_focused_pressed.png
+    │   │   ├── 📄 unshade_unfocused.png
+    │   │   ├── 📄 unshade_unfocused_prelight.png
+    │   │   └── 📄 unshade_unfocused_pressed.png
+    │   ├── 📁 assets-Win-Light
+    │   │   ├── 📄 close.png
+    │   │   ├── 📄 close_focused.png
+    │   │   ├── 📄 close_focused_normal.png
+    │   │   ├── 📄 close_focused_prelight.png
+    │   │   ├── 📄 close_focused_pressed.png
+    │   │   ├── 📄 close_unfocused.png
+    │   │   ├── 📄 close_unfocused_prelight.png
+    │   │   ├── 📄 close_unfocused_pressed.png
+    │   │   ├── 📄 maximize.png
+    │   │   ├── 📄 maximize_focused.png
+    │   │   ├── 📄 maximize_focused_normal.png
+    │   │   ├── 📄 maximize_focused_prelight.png
+    │   │   ├── 📄 maximize_focused_pressed.png
+    │   │   ├── 📄 maximize_unfocused.png
+    │   │   ├── 📄 maximize_unfocused_prelight.png
+    │   │   ├── 📄 maximize_unfocused_pressed.png
+    │   │   ├── 📄 menu.png
+    │   │   ├── 📄 menu_focused.png
+    │   │   ├── 📄 menu_focused_normal.png
+    │   │   ├── 📄 menu_focused_prelight.png
+    │   │   ├── 📄 menu_focused_pressed.png
+    │   │   ├── 📄 menu_unfocused.png
+    │   │   ├── 📄 menu_unfocused_prelight.png
+    │   │   ├── 📄 menu_unfocused_pressed.png
+    │   │   ├── 📄 minimize.png
+    │   │   ├── 📄 minimize_focused.png
+    │   │   ├── 📄 minimize_focused_normal.png
+    │   │   ├── 📄 minimize_focused_prelight.png
+    │   │   ├── 📄 minimize_focused_pressed.png
+    │   │   ├── 📄 minimize_unfocused.png
+    │   │   ├── 📄 minimize_unfocused_prelight.png
+    │   │   ├── 📄 minimize_unfocused_pressed.png
+    │   │   ├── 📄 shade.png
+    │   │   ├── 📄 shade_focused.png
+    │   │   ├── 📄 shade_focused_normal.png
+    │   │   ├── 📄 shade_focused_prelight.png
+    │   │   ├── 📄 shade_focused_pressed.png
+    │   │   ├── 📄 shade_unfocused.png
+    │   │   ├── 📄 shade_unfocused_prelight.png
+    │   │   ├── 📄 shade_unfocused_pressed.png
+    │   │   ├── 📄 unmaximize.png
+    │   │   ├── 📄 unmaximize_focused.png
+    │   │   ├── 📄 unmaximize_focused_normal.png
+    │   │   ├── 📄 unmaximize_focused_prelight.png
+    │   │   ├── 📄 unmaximize_focused_pressed.png
+    │   │   ├── 📄 unmaximize_unfocused.png
+    │   │   ├── 📄 unmaximize_unfocused_prelight.png
+    │   │   ├── 📄 unmaximize_unfocused_pressed.png
+    │   │   ├── 📄 unshade.png
+    │   │   ├── 📄 unshade_focused.png
+    │   │   ├── 📄 unshade_focused_normal.png
+    │   │   ├── 📄 unshade_focused_prelight.png
+    │   │   ├── 📄 unshade_focused_pressed.png
+    │   │   ├── 📄 unshade_unfocused.png
+    │   │   ├── 📄 unshade_unfocused_prelight.png
+    │   │   └── 📄 unshade_unfocused_pressed.png
+    │   ├── 📄 assets-Win-Light.svg
+    │   ├── 📄 assets-Win.svg
+    │   ├── 📄 assets.svg
+    │   ├── 📄 assets.txt
+    │   ├── 📄 metacity-theme-3-Round.xml
+    │   ├── 📄 metacity-theme-3-Win.xml
+    │   ├── 📄 metacity-theme-3.xml
+    │   ├── 📄 render-assets.sh
+    │   ├── 📄 thumbnail-Light.png
+    │   ├── 📄 thumbnail-Round-Light.png
+    │   ├── 📄 thumbnail-Round.png
+    │   ├── 📄 thumbnail-Win-Light.png
+    │   ├── 📄 thumbnail-Win.png
+    │   ├── 📄 thumbnail.png
+    │   └── 📄 thumbnail.svg
+    ├── 📁 plank
+    │   └── 📄 dock.theme
+    ├── 📁 unity
+    │   ├── 📄 close.svg
+    │   ├── 📄 close_dash.svg
+    │   ├── 📄 close_dash_disabled.svg
+    │   ├── 📄 close_dash_prelight.svg
+    │   ├── 📄 close_dash_pressed.svg
+    │   ├── 📄 close_focused_normal.svg
+    │   ├── 📄 close_focused_prelight.svg
+    │   ├── 📄 close_focused_pressed.svg
+    │   ├── 📄 close_unfocused.svg
+    │   ├── 📄 close_unfocused_prelight.svg
+    │   ├── 📄 close_unfocused_pressed.svg
+    │   ├── 📁 dash
+    │   │   ├── 📄 close_dash.svg
+    │   │   ├── 📄 close_dash_disabled.svg
+    │   │   ├── 📄 close_dash_prelight.svg
+    │   │   ├── 📄 close_dash_pressed.svg
+    │   │   ├── 📄 maximize_dash.svg
+    │   │   ├── 📄 maximize_dash_disabled.svg
+    │   │   ├── 📄 maximize_dash_prelight.svg
+    │   │   ├── 📄 maximize_dash_pressed.svg
+    │   │   ├── 📄 minimize_dash.svg
+    │   │   ├── 📄 minimize_dash_disabled.svg
+    │   │   ├── 📄 minimize_dash_prelight.svg
+    │   │   ├── 📄 minimize_dash_pressed.svg
+    │   │   ├── 📄 unmaximize_dash.svg
+    │   │   ├── 📄 unmaximize_dash_disabled.svg
+    │   │   ├── 📄 unmaximize_dash_prelight.svg
+    │   │   └── 📄 unmaximize_dash_pressed.svg
+    │   ├── 📄 launcher_arrow_ltr_19-1.svg
+    │   ├── 📄 launcher_arrow_ltr_19.svg
+    │   ├── 📄 launcher_arrow_ltr_37.svg
+    │   ├── 📄 launcher_arrow_outline_ltr_19.svg
+    │   ├── 📄 launcher_arrow_outline_ltr_37.svg
+    │   ├── 📄 launcher_arrow_outline_rtl_19.svg
+    │   ├── 📄 launcher_arrow_outline_rtl_37.svg
+    │   ├── 📄 launcher_arrow_rtl_19.svg
+    │   ├── 📄 launcher_arrow_rtl_37.svg
+    │   ├── 📄 launcher_icon_back_150.svg
+    │   ├── 📄 launcher_icon_back_54.svg
+    │   ├── 📄 launcher_icon_edge_150.svg
+    │   ├── 📄 launcher_icon_edge_54.svg
+    │   ├── 📄 launcher_icon_glow_200.svg
+    │   ├── 📄 launcher_icon_glow_62.svg
+    │   ├── 📄 launcher_icon_selected_back_150.svg
+    │   ├── 📄 launcher_icon_selected_back_54.svg
+    │   ├── 📄 launcher_icon_shadow_200.svg
+    │   ├── 📄 launcher_icon_shadow_62.svg
+    │   ├── 📄 launcher_icon_shine_150.svg
+    │   ├── 📄 launcher_icon_shine_54.svg
+    │   ├── 📄 launcher_pip_ltr_19.svg
+    │   ├── 📄 launcher_pip_ltr_37.svg
+    │   ├── 📄 launcher_pip_rtl_19.svg
+    │   ├── 📄 launcher_pip_rtl_37.svg
+    │   ├── 📄 maximize.svg
+    │   ├── 📄 maximize_dash.svg
+    │   ├── 📄 maximize_dash_disabled.svg
+    │   ├── 📄 maximize_dash_prelight.svg
+    │   ├── 📄 maximize_dash_pressed.svg
+    │   ├── 📄 maximize_focused_normal.svg
+    │   ├── 📄 maximize_focused_prelight.svg
+    │   ├── 📄 maximize_focused_pressed.svg
+    │   ├── 📄 maximize_unfocused.svg
+    │   ├── 📄 maximize_unfocused_prelight.svg
+    │   ├── 📄 maximize_unfocused_pressed.svg
+    │   ├── 📄 minimize.svg
+    │   ├── 📄 minimize_dash.svg
+    │   ├── 📄 minimize_dash_disabled.svg
+    │   ├── 📄 minimize_dash_prelight.svg
+    │   ├── 📄 minimize_dash_pressed.svg
+    │   ├── 📄 minimize_focused_normal.svg
+    │   ├── 📄 minimize_focused_prelight.svg
+    │   ├── 📄 minimize_focused_pressed.svg
+    │   ├── 📄 minimize_unfocused.svg
+    │   ├── 📄 minimize_unfocused_prelight.svg
+    │   ├── 📄 minimize_unfocused_pressed.svg
+    │   ├── 📄 sheet_style_close_focused.svg
+    │   ├── 📄 sheet_style_close_focused_prelight.svg
+    │   ├── 📄 sheet_style_close_focused_pressed.svg
+    │   ├── 📄 unmaximize.svg
+    │   ├── 📄 unmaximize_dash.svg
+    │   ├── 📄 unmaximize_dash_disabled.svg
+    │   ├── 📄 unmaximize_dash_prelight.svg
+    │   ├── 📄 unmaximize_dash_pressed.svg
+    │   ├── 📄 unmaximize_focused_normal.svg
+    │   ├── 📄 unmaximize_focused_prelight.svg
+    │   ├── 📄 unmaximize_focused_pressed.svg
+    │   ├── 📄 unmaximize_unfocused.svg
+    │   ├── 📄 unmaximize_unfocused_prelight.svg
+    │   ├── 📄 unmaximize_unfocused_pressed.svg
+    │   └── 📁 window-buttons
+    │       ├── 📄 close.svg
+    │       ├── 📄 close_prelight.svg
+    │       ├── 📄 close_pressed.svg
+    │       ├── 📄 close_unfocused.svg
+    │       ├── 📄 maximize.svg
+    │       ├── 📄 maximize_prelight.svg
+    │       ├── 📄 maximize_pressed.svg
+    │       ├── 📄 maximize_unfocused.svg
+    │       ├── 📄 minimize.svg
+    │       ├── 📄 minimize_prelight.svg
+    │       ├── 📄 minimize_pressed.svg
+    │       ├── 📄 minimize_unfocused.svg
+    │       ├── 📄 unmaximize.svg
+    │       ├── 📄 unmaximize_prelight.svg
+    │       ├── 📄 unmaximize_pressed.svg
+    │       └── 📄 unmaximize_unfocused.svg
+    ├── 📁 xfce-notify-4.0
+    │   └── 📄 gtk.css
+    └── 📁 xfwm4
+        ├── 📁 assets
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Light
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Light-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Light-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Light.svg
+        ├── 📁 assets-Round
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Round-Light
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Round-Light-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Round-Light-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Round-Light.svg
+        ├── 📁 assets-Round-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Round-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Round.svg
+        ├── 📁 assets-Win
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Light
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Light-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Light-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Win-Light.svg
+        ├── 📁 assets-Win-Round
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Round-Light
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Round-Light-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Round-Light-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Win-Round-Light.svg
+        ├── 📁 assets-Win-Round-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-Round-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Win-Round.svg
+        ├── 📁 assets-Win-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-Win-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets-Win.svg
+        ├── 📁 assets-hdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📁 assets-xhdpi
+        │   ├── 📄 bottom-active.png
+        │   ├── 📄 bottom-inactive.png
+        │   ├── 📄 bottom-left-active.png
+        │   ├── 📄 bottom-left-inactive.png
+        │   ├── 📄 bottom-right-active.png
+        │   ├── 📄 bottom-right-inactive.png
+        │   ├── 📄 close-active.png
+        │   ├── 📄 close-inactive.png
+        │   ├── 📄 close-prelight.png
+        │   ├── 📄 close-pressed.png
+        │   ├── 📄 hide-active.png
+        │   ├── 📄 hide-inactive.png
+        │   ├── 📄 hide-prelight.png
+        │   ├── 📄 hide-pressed.png
+        │   ├── 📄 left-active.png
+        │   ├── 📄 left-inactive.png
+        │   ├── 📄 maximize-active.png
+        │   ├── 📄 maximize-inactive.png
+        │   ├── 📄 maximize-prelight.png
+        │   ├── 📄 maximize-pressed.png
+        │   ├── 📄 maximize-toggled-active.png
+        │   ├── 📄 maximize-toggled-inactive.png
+        │   ├── 📄 maximize-toggled-prelight.png
+        │   ├── 📄 maximize-toggled-pressed.png
+        │   ├── 📄 menu-active.png
+        │   ├── 📄 menu-inactive.png
+        │   ├── 📄 menu-prelight.png
+        │   ├── 📄 menu-pressed.png
+        │   ├── 📄 right-active.png
+        │   ├── 📄 right-inactive.png
+        │   ├── 📄 shade-active.png
+        │   ├── 📄 shade-inactive.png
+        │   ├── 📄 shade-prelight.png
+        │   ├── 📄 shade-pressed.png
+        │   ├── 📄 shade-toggled-active.png
+        │   ├── 📄 shade-toggled-inactive.png
+        │   ├── 📄 shade-toggled-prelight.png
+        │   ├── 📄 shade-toggled-pressed.png
+        │   ├── 📄 stick-active.png
+        │   ├── 📄 stick-inactive.png
+        │   ├── 📄 stick-prelight.png
+        │   ├── 📄 stick-pressed.png
+        │   ├── 📄 stick-toggled-active.png
+        │   ├── 📄 stick-toggled-inactive.png
+        │   ├── 📄 stick-toggled-prelight.png
+        │   ├── 📄 stick-toggled-pressed.png
+        │   ├── 📄 title-1-active.png
+        │   ├── 📄 title-1-inactive.png
+        │   ├── 📄 title-2-active.png
+        │   ├── 📄 title-2-inactive.png
+        │   ├── 📄 title-3-active.png
+        │   ├── 📄 title-3-inactive.png
+        │   ├── 📄 title-4-active.png
+        │   ├── 📄 title-4-inactive.png
+        │   ├── 📄 title-5-active.png
+        │   ├── 📄 title-5-inactive.png
+        │   ├── 📄 top-left-active.png
+        │   ├── 📄 top-left-inactive.png
+        │   ├── 📄 top-right-active.png
+        │   └── 📄 top-right-inactive.png
+        ├── 📄 assets.svg
+        ├── 📄 assets.txt
+        ├── 📄 render-assets.sh
+        ├── 📄 themerc
+        ├── 📄 themerc-Light
+        ├── 📄 themerc-Round
+        ├── 📄 themerc-Round-Light
+        ├── 📄 themerc-Win
+        ├── 📄 themerc-Win-Light
+        ├── 📄 themerc-Win-Round
+        └── 📄 themerc-Win-Round-Light
