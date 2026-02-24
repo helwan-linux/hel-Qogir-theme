@@ -8,8 +8,9 @@ jobs:
     steps:
       - name: Update System and Install Build Tools
         run: |
+          # تحديث القاعدة وتثبيت أدوات البناء الأساسية فقط
           pacman -Syu --noconfirm
-          pacman -S --noconfirm base-devel git sassc gtk-engine-murrine gtk-engines
+          pacman -S --noconfirm base-devel git sassc
 
       - name: Checkout Your Files
         uses: actions/checkout@v4
@@ -17,8 +18,10 @@ jobs:
       - name: Build Package (makepkg)
         run: |
           useradd -m builder
+          # إعطاء صلاحيات للمستخدم الجديد
+          echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
           chown -R builder .
-          # إضافة --nodeps لتخطي فحص التبعات داخل البيئة الوهمية لأننا ثبتناها يدوياً
+          # استخدام --ignorearch و --nodeps لضمان البناء داخل الحاوية بدون مشاكل توافقية
           sudo -u builder makepkg -f --noconfirm --nodeps
 
       - name: Upload ZST Package
