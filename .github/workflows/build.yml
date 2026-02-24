@@ -6,23 +6,31 @@ jobs:
     runs-on: ubuntu-latest
     container: archlinux:latest
     steps:
-      - name: Install Build Tools Only
+      - name: Install Build Tools
         run: |
           pacman -Syu --noconfirm
-          # هنثبت بس اللي محتاجينه عشان "نصنع" الملف
-          pacman -S --noconfirm base-devel git sassc 
+          pacman -S --noconfirm base-devel git sassc
 
       - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Build Package
         run: |
+          # إنشاء مستخدم البناء
           useradd -m builder
           echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-          chown -R builder .
-          # علم --nodeps بيخلي السيرفر يطنش إن murrine مش عنده، 
-          # لأننا كدة كدة بنبني CSS مش بنشغل واجهة
+          
+          # تأكد إن الملفات في مكانها الصحيح للـ makepkg
+          # هننسخ الملفات لمجلد الهوم بتاع البيلدر عشان الصلاحيات
+          cp PKGBUILD _colors.scss _variables.scss /home/builder/
+          chown -R builder:builder /home/builder/
+          
+          # البناء من جوه مجلد الهوم
+          cd /home/builder/
           sudo -u builder makepkg -f --noconfirm --nodeps
+          
+          # نقل الناتج للمجلد الرئيسي عشان الـ Upload
+          cp *.pkg.tar.zst /__w/hel-Qogir-theme/hel-Qogir-theme/
 
       - name: Export Artifact
         uses: actions/upload-artifact@v4
