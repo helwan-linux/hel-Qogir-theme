@@ -6,35 +6,31 @@ jobs:
     runs-on: ubuntu-latest
     container: archlinux:latest
     steps:
-      - name: Install Build Tools
+      - name: Install Tools
         run: |
           pacman -Syu --noconfirm
           pacman -S --noconfirm base-devel git sassc
 
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Build Package
         run: |
-          # 1. إعداد المستخدم
           useradd -m builder
           echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
           
-          # 2. نسخ الملفات باستخدام المسار المطلق لضمان عدم ضياعها
-          # $GITHUB_WORKSPACE هو المكان اللي الأكشن نزل فيه ملفاتك
-          cp $GITHUB_WORKSPACE/PKGBUILD /home/builder/
-          cp $GITHUB_WORKSPACE/_colors.scss /home/builder/
-          cp $GITHUB_WORKSPACE/_variables.scss /home/builder/
+          # البحث عن الملفات ونسخها لمجلد builder لضمان وجودها
+          find . -name "PKGBUILD" -exec cp {} /home/builder/ \;
+          find . -name "_colors.scss" -exec cp {} /home/builder/ \;
+          find . -name "_variables.scss" -exec cp {} /home/builder/ \;
           
-          # 3. ضبط الصلاحيات
           chown -R builder:builder /home/builder/
-          
-          # 4. البناء من مجلد الهوم الخاص بالبيلدر
           cd /home/builder/
-          # --nodeps عشان نتخطى فحص التبعات في السيرفر ونعتمد على hpm عند المستخدم
+          
+          # البناء بصيغة zst وتخطي التبعات المفقودة في السيرفر
           sudo -u builder makepkg -f --noconfirm --nodeps
           
-          # 5. نقل ملف الـ zst الناتج لمكان الأكشن عشان يقدر يرفعه
+          # نقل الحزمة الناتجة لمجلد العمل الرئيسي للرفع
           cp *.pkg.tar.zst $GITHUB_WORKSPACE/
 
       - name: Export Artifact
