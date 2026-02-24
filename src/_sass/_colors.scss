@@ -16,10 +16,10 @@ $alt_fg_color: rgba($fg_color, 0.75);
 $sec_fg_color: rgba($fg_color, 0.6);
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: #5294e2;
+$selected_bg_color: #3c688f;
 
-@if $theme == 'manjaro' { $selected_bg_color: #2eb398; }
-@if $theme == 'ubuntu' { $selected_bg_color: #fb8441; }
+//@if $theme == 'manjaro' { $selected_bg_color: #2eb398; }
+//@if $theme == 'ubuntu' { $selected_bg_color: #fb8441; }
 
 $alt_selected_bg_color: lighten($selected_bg_color, 5%);
 $sec_selected_bg_color: darken($selected_bg_color, 10%);
@@ -40,15 +40,15 @@ $suggested_fg_color: white;
 $drop_target_color: #F08437;
 $progress_color: $selected_bg_color;
 
-$borders_color: if($variant == 'light', rgba(black, 0.12), rgba(white, 0.12));
+$borders_color: if($variant == 'light', rgba(#738698, 0.2), rgba(#738698, 0.15));
 $alt_borders_color: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.05));
-$solid_borders_color: if($variant == 'light', mix(black, $base_color, 12%), mix(white, $base_color, 12%));
+$solid_borders_color: if($variant == 'light', mix(#738698, $base_color, 15%), mix(#738698, $base_color, 10%));
 $highlight: if($variant == 'light', rgba(white, 0.13), rgba(white, 0.10));
 $alt_highlight_color: rgba(white, 0.2);
 $undershoot_shade_color: if($variant == 'light', rgba(black, 0.12), rgba(black, 0.25));
 
-$link_color: if($variant == 'light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 20%));
-$link_visited_color: if($variant == 'light', darken($text_color, 5%), lighten($text_color, 10%));
+$link_color: if($variant == 'light', #3c688f, lighten(#3c688f, 30%));
+$link_visited_color: if($variant == 'light', #738698, rgba(#738698, 0.8));
 
 //insensitive state derived colors
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
@@ -96,8 +96,8 @@ $osd_borders_color: $osd_button_border;
 
 $menu_bg: if($variant=='light', $base_color, $bg_color);
 
-$panel_bg: #21232b;
-$panel_fg: $osd_fg_color;
+$panel_bg: #1a1c22;
+$panel_fg: #e6ebef;
 
 $privacy_indicator_color: $warning_color;
 $recording_indicator_color: $error_color;
@@ -130,11 +130,11 @@ $wm_icon_close_bg: if($variant == 'light' and $titlebar == 'light',#F8F8F9 , #2f
 
 // Minimize, Maximize
 $wm_button_hover_bg: if($variant == 'light' and $titlebar == 'light', #fdfdfd, #454C5C);
-$wm_button_active_bg: $selected_bg_color;
+$wm_button_active_bg: #3c688f;
 
 $wm_button_hover_border: if($variant == 'light' and $titlebar == 'light', #D1D3DA, #262932);
 
 $wm_icon_bg: if($variant == 'light' and $titlebar == 'light', #90949E, #90939B);
 $wm_icon_unfocused_bg: if($variant == 'light' and $titlebar == 'light', #B6B8C0, #666A74);
 $wm_icon_hover_bg: if($variant == 'light' and $titlebar == 'light', #7A7F8B, #C4C7CC);
-$wm_icon_active_bg: $selected_fg_color;
+$wm_icon_active_bg: #ffffff;
