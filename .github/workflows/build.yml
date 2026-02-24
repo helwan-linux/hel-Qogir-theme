@@ -16,21 +16,26 @@ jobs:
 
       - name: Build Package
         run: |
-          # إنشاء مستخدم البناء
+          # 1. إعداد المستخدم
           useradd -m builder
           echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
           
-          # تأكد إن الملفات في مكانها الصحيح للـ makepkg
-          # هننسخ الملفات لمجلد الهوم بتاع البيلدر عشان الصلاحيات
-          cp PKGBUILD _colors.scss _variables.scss /home/builder/
+          # 2. نسخ الملفات باستخدام المسار المطلق لضمان عدم ضياعها
+          # $GITHUB_WORKSPACE هو المكان اللي الأكشن نزل فيه ملفاتك
+          cp $GITHUB_WORKSPACE/PKGBUILD /home/builder/
+          cp $GITHUB_WORKSPACE/_colors.scss /home/builder/
+          cp $GITHUB_WORKSPACE/_variables.scss /home/builder/
+          
+          # 3. ضبط الصلاحيات
           chown -R builder:builder /home/builder/
           
-          # البناء من جوه مجلد الهوم
+          # 4. البناء من مجلد الهوم الخاص بالبيلدر
           cd /home/builder/
+          # --nodeps عشان نتخطى فحص التبعات في السيرفر ونعتمد على hpm عند المستخدم
           sudo -u builder makepkg -f --noconfirm --nodeps
           
-          # نقل الناتج للمجلد الرئيسي عشان الـ Upload
-          cp *.pkg.tar.zst /__w/hel-Qogir-theme/hel-Qogir-theme/
+          # 5. نقل ملف الـ zst الناتج لمكان الأكشن عشان يقدر يرفعه
+          cp *.pkg.tar.zst $GITHUB_WORKSPACE/
 
       - name: Export Artifact
         uses: actions/upload-artifact@v4
