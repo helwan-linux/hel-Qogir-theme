@@ -1,0 +1,27 @@
+name: Build Hel-Qogir-Theme ZST
+on: [push]
+
+jobs:
+  build_zst:
+    runs-on: ubuntu-latest
+    container: archlinux:latest # استخدام بيئة آرتش أصلية للبناء الصحيح
+    steps:
+      - name: Install Build Dependencies
+        run: |
+          pacman -Syu --noconfirm
+          pacman -S --noconfirm base-devel git sassc
+
+      - name: Checkout Your Files
+        uses: actions/checkout@v4
+
+      - name: Build Package (makepkg)
+        run: |
+          useradd -m builder
+          chown -R builder .
+          sudo -u builder makepkg -f --noconfirm
+
+      - name: Upload ZST Package
+        uses: actions/upload-artifact@v4
+        with:
+          name: hel-Qogir-theme-zst
+          path: "*.pkg.tar.zst"
