@@ -23,6 +23,9 @@ prepare() {
 
 package() {
   cd Qogir-theme
-  # التثبيت باسم hel-Qogir
-  ./install.sh -n hel-Qogir -d "$pkgdir/usr/share/themes"
+  # إنشاء المجلد يدوياً لضمان وجوده قبل تشغيل سكريبت التثبيت
+  install -d "${pkgdir}/usr/share/themes"
+  
+  # التثبيت مع تحديد المسار الكامل والاسم
+  ./install.sh -n hel-Qogir -d "${pkgdir}/usr/share/themes"
 }
